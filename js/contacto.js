@@ -11,11 +11,9 @@ btnEnviar.addEventListener("click", function(event){
     event.preventDefault();
 
     if (InputCorreo.value.match(emailRegex) == null) {
-
         AlertEscritura.style.display = "block";
         AlertEscritura.innerHTML += "<br/>El correo electrónico no es válido.";
         InputCorreo.style.border = "solid red 1px"; 
-
     }// if
     else{
         InputCorreo.style.border = "solid green 1px";
