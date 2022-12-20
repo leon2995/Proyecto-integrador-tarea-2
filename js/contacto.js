@@ -12,7 +12,7 @@ let validos = 0;
 
 btnEnviar.addEventListener("click", function(event){
     event.preventDefault();
-
+    AlertEscritura.style.display="none";
     if(InputTelefono.value.length < 10 ){
         AlertEscritura.style.display = "block";
         AlertEscritura.innerHTML += "<br/>Debes ingresar un numero válido.";
@@ -59,12 +59,28 @@ btnEnviar.addEventListener("click", function(event){
     }
 
     if(validos == 4){
+        console.log(InputCorreo.value);
         setTimeout(function(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "aajolote9.adventure@gmail.com",
+                Password : "1B35D6E2483ABB0DFB136766A57A96C6E0F2",
+                To : 'aajolote9.adventure@gmail.com',
+                From : 'aajolote9.adventure@gmail.com', 
+                Subject : "Adventure Travel Contact",
+                Body : ` ${InputNombre.value} quiere ponerse en contacto.
+                Su correo es: ${InputCorreo.value}.
+                Su telefono es: ${InputTelefono.value}.
+                Su comentario:  ${InputComentario.value} `
+            }).then(
+              message => alert(message)
+            );
             InputCorreo.style.border ="";
             InputNombre.style.border ="";
             InputTelefono.style.border ="";
             InputComentario.style.border ="";
-        }, 3000)
+        }, 2000)
     }//==4
+    
 
 });//btEnviar
