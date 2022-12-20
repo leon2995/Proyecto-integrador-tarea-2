@@ -5,21 +5,32 @@ let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@
 let btnEnviar = document.getElementById("btnEnviar");
 let InputNombre = document.getElementById("InputNombre");
 let InputTelefono = document.getElementById("InputTelefono");
+let InputComentario = document.getElementById("InputComentario");
+let idTimeout;
+let validos = 0;
 
 
 btnEnviar.addEventListener("click", function(event){
     event.preventDefault();
 
-    if (InputCorreo.value.match(emailRegex) == null) {
+    if(InputTelefono.value.length < 10 ){
+        AlertEscritura.style.display = "block";
+        AlertEscritura.innerHTML += "<br/>Debes ingresar un numero válido.";
+        InputTelefono.style.border = "solid red 1px"; 
+    }  else{
+        InputTelefono.style.border = "solid green 1px";
+        validos++;
+    }// else
 
+
+    if (InputCorreo.value.match(emailRegex) == null) {
         AlertEscritura.style.display = "block";
         AlertEscritura.innerHTML += "<br/>El correo electrónico no es válido.";
         InputCorreo.style.border = "solid red 1px"; 
-
     }// if
     else{
         InputCorreo.style.border = "solid green 1px";
-
+        validos++;
     }// else
 
     InputNombre.innerHTML="";
@@ -32,19 +43,28 @@ btnEnviar.addEventListener("click", function(event){
     }
     else{
         InputNombre.style.border = "solid green 1px";
-
+        validos++;
     }// else
-    /*InputTelefono.innerHTML="";
-    if (InputTelefono.value.length < 3) {
-        AlertEscritura.innerHTML = "El mensaje debe contener 3 caracteres o más.";
-        AlertEscritura.style.display="block";
-        InputTelefono.focus();
-        InputTelefono.select();
-        InputTelefono.style.border = "solid red 1px";   
-    }
-    else{
-        InputTelefono.style.border = "solid green 1px";
 
-    }*/
+    if (InputComentario.value.trim().length < 5){
+        AlertEscritura.innerHTML = "El comentario debe de contener 5 caracteres o más";
+        AlertEscritura.style.display= "block";
+        InputComentario.focus(); 
+        InputComentario.select();
+        InputComentario.style.border = "solid red 1px";
+    }//if
+    else{
+        InputComentario.style.border = "solid green 1px";
+        validos++;
+    }
+
+    if(validos == 4){
+        setTimeout(function(){
+            InputCorreo.style.border ="";
+            InputNombre.style.border ="";
+            InputTelefono.style.border ="";
+            InputComentario.style.border ="";
+        }, 3000)
+    }//==4
 
 });//btEnviar
