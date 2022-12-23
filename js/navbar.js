@@ -12,10 +12,10 @@ function menu() {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav" aria-current="page">
         <li class="nav-item">
-          <a class="navbar-brand"  href="#">Catálogo</a>
+          <a class="navbar-brand"  href="/html/catalogo.html">Catálogo</a>
         </li>
         <li class="nav-item">
-          <a class="navbar-brand" href="#">Reseñas</a>
+          <a class="navbar-brand" href="/html/resenas.html">Reseñas</a>
         </li>
         <li class="nav-item">
           <a class="navbar-brand" href="/html/aboutus.html">Nosotros</a>
