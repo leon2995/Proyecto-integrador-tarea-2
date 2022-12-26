@@ -26,19 +26,19 @@
 .quienes{
 display: flex;
 float: right;
-margin-right: 15%;
+margin-right: 17.5%;
 margin-top: 5%;
 }
 
 /*contedor para logo*/
 .contlogo {
-    background-color: coral;
+    /*background-color: coral;*/
     box-sizing: border-box;
-    height: 250px;
+    height: 300px;
     width: 35%;
     display: flex;
     float: left;
-    margin-left: 30px;
+    margin-left: 200px;
     margin-top: 30px;
     margin-top: 5%;
 
@@ -54,4 +54,5 @@ margin-top: 5%;
     float: right;
     margin-right: 30px;
     margin-top: 30px;
+    font-size: 150%
 }
