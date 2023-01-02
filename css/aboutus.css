@@ -2,6 +2,76 @@
  
     text-align: justify; 
     padding: 10px;
-    
+    margin-top: 40%;   
+     
 }
 
+#quienes{
+    text-align: center;
+  }
+  
+
+    
+
+
+  .text{
+    text-align: center;
+    }
+.card-title{
+    text-align: center;
+}
+
+/*h1 de quienes somos*/
+
+.quienes{
+display: flex;
+float: right;
+margin-right: 17.5%;
+margin-top: 5%;
+}
+
+/*contedor para logo*/
+.contlogo {
+    /*background-color: coral;*/
+    box-sizing: border-box;
+    height: 300px;
+    width: 35%;
+    display: flex;
+    float: left;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-top: 5%;
+
+}  
+
+/*parrafo de quienes somos*/
+.pa {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    display: flex;
+    float: right;
+    margin-right: 30px;
+    margin-top: 0px;
+    font-size: 150%
+}
+body{
+    margin: 0;
+    position: relative;
+    padding-bottom: 2em;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+footer{
+    padding: 1em 0;
+    background-color: #FF6F61 ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+
+    
+}
