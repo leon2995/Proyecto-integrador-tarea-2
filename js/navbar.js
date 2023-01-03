@@ -1,10 +1,15 @@
 let navBar = document.getElementById("menu");
 
 function menu() {
-  navBar.innerHTML = `<nav class="navbar navbar-expand-lg bg-light">
+  navBar.innerHTML = `<nav class="navbar navbar-expand-lg">
+  
+  
+  <a href="/index.html">}
+  <img id="inicio" src="/fotos/logo.png">
+  </a>
+
   <div class="container-fluid">
-    <a class="navbar-brand" href="/index.html">Inicio</a>
-    
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"> </span>
     </button>
@@ -23,12 +28,22 @@ function menu() {
         <li class="nav-item">
           <a class="navbar-brand" href="/html/contacto.html">Contacto</a>
         </li>
+
       </ul>
     </div>
   </div>
+  <ul class="navbar-nav" aria-current="page">
+  <li class="nav-item">
+  <a class="navbar-brand" href="/html/registro.html">Registro</a>
+  </li>
+  </ul>
+  <a href="/index.html">
+    <img id="carrito" src="/fotos/carrito.png">
+  </a>
 </nav>
 `;
 }
+
 menu();
 
 let footer = document.getElementById("pieDePag");

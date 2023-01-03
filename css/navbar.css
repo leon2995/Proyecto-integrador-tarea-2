@@ -1,4 +1,10 @@
-/* NAVBAR */
+/* logo */ 
+#inicio {
+	width: 60px;
+	height: auto;
+}
+
+/* NAVBAR*/
 .container-fluid{
     width: auto ;margin: auto; 
 }
@@ -68,4 +74,10 @@
 	left: 100%;
 }
 
-/* NAVBAR */
+/* NAVBAR */ 
+
+#carrito{
+	width: 40px;
+	height:40px;	
+}
+
