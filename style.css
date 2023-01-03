@@ -1,0 +1,71 @@
+/* NAVBAR */
+.container-fluid{
+    width: auto ;margin: auto; 
+}
+.navbar-expand-lg{
+    background-color: #277fbb
+    ;
+}
+
+
+.navbar-brand{
+	position: relative;
+	display: block;
+	padding: 5px 15px;
+	border-radius: 6px;
+	text-align: center;
+	font-weight: bold;
+	max-width: 150px;
+	height: center;
+	margin-bottom: 10px; /* es lo que ahorita esta en azul*/
+	overflow: hidden;
+	color:rgba(255,255,255,1);
+	cursor: pointer;
+	letter-spacing: 1px;
+	box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+	text-decoration: none;
+	transition: all ease 0.5s;
+	background: #00646B
+}
+
+ 
+.navbar-brand:after,
+.navbar-brand:before{
+	width: 80px;
+	height: 200px;
+	content: '';
+	display: block;
+	background: rgba(255,255,255,0.5);
+	transform: rotate(45deg);
+	top: -60px;
+	position: absolute;
+	transition: none;
+	right:-45%;
+	cursor: pointer;
+}
+
+.navbar-brand:before{
+	left: -48%;
+}
+ 
+.navbar-brand:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background: #0084a1
+}
+ 
+.navbar-brand:hover:after,
+.navbar-brand:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgba(255,255,255,0.1);
+	transition: all ease 0.5s;
+}
+ 
+.navbar-brand:hover:after{
+	right: 100%;
+}
+
+.navbar-brand:hover:before{
+	left: 100%;
+}
+
+/* NAVBAR */
