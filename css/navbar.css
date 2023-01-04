@@ -1,7 +1,9 @@
 /* logo */ 
 #inicio {
 	width: 60px;
+	height: 60px;
 	height: auto;
+	margin-left: 50px;
 }
 
 /* NAVBAR*/
@@ -77,6 +79,8 @@
 /* NAVBAR */ 
 
 #carrito{
+	margin-right: 70px;
+	padding-right: 10px;
 	width: 40px;
 	height:40px;	
 }

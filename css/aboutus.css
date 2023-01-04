@@ -1,21 +1,12 @@
-.container {
- 
-    text-align: justify; 
-    padding: 10px;
-    margin-top: 40%;   
+.container { 
+    margin-top: 15%;
+    margin-bottom: 10%;   
      
 }
 
-#quienes{
-    text-align: center;
-  }
-  
-
-    
-
 
   .text{
-    text-align: center;
+       text-align: center;
     }
 .card-title{
     text-align: center;
@@ -24,54 +15,51 @@
 /*h1 de quienes somos*/
 
 .quienes{
+box-sizing: border-box;
 display: flex;
 float: right;
-margin-right: 17.5%;
-margin-top: 5%;
+margin-top: 100px;
+padding-top: 70px;
+padding-right: 250px;
 }
 
 /*contedor para logo*/
 .contlogo {
     /*background-color: coral;*/
     box-sizing: border-box;
-    height: 300px;
+    height: 400px;
     width: 35%;
     display: flex;
     float: left;
-    margin-left: 200px;
     margin-top: 30px;
-    margin-top: 5%;
+    padding-left: 200px;
 
 }  
 
 /*parrafo de quienes somos*/
 .pa {
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    width: 60%;
     display: flex;
     float: right;
-    margin-right: 30px;
-    margin-top: 0px;
-    font-size: 150%
-}
-body{
-    margin: 0;
-    position: relative;
-    padding-bottom: 2em;
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
+    margin-top: 40px;
+    padding-right: 20px;
+
+
 }
 
 footer{
     padding: 1em 0;
     background-color: #FF6F61 ;
     position: absolute;
-    bottom: 0;
+    margin-bottom: 0;
     width: 100%;
 
 
     
+}
+
+.espacio{
+   height: 10cm;
+   width: 10cm;
 }
