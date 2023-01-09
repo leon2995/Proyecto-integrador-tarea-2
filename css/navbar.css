@@ -1,3 +1,23 @@
+/* Estilos de el footer */
+body{
+    margin: 0;
+    position: relative;
+    padding-bottom: 2em;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+footer{
+    padding: 1em 0;
+    background-color: #FF6F61 ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  
+  
+    
+  }
 /* logo */ 
 #inicio {
 	width: 60px;
