@@ -83,13 +83,4 @@ btnEnviar.addEventListener("click", function(event){
 
     }//==4
     
-<<<<<<< HEAD
-
-});//btEnviar
-
-//password: ajolotitosbebe
-=======
-<input type="file" name="imagen1" />
-<input type="submit" name="subir-imagen" value="Enviar imagen" />
 });//btEnviarimage.pngimage.png
->>>>>>> 4b1afc68844e991d6f14e443e849346437ec1e62
