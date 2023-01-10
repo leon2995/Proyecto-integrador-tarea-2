@@ -80,7 +80,9 @@ btnEnviar.addEventListener("click", function(event){
             InputTelefono.style.border ="";
             InputComentario.style.border ="";
         }, 2000)
+
     }//==4
     
-
-});//btEnviar
+<input type="file" name="imagen1" />
+<input type="submit" name="subir-imagen" value="Enviar imagen" />
+});//btEnviarimage.pngimage.png
