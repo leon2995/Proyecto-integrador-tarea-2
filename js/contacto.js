@@ -80,7 +80,7 @@ btnEnviar.addEventListener("click", function(event){
             InputTelefono.style.border ="";
             InputComentario.style.border ="";
         }, 2000)
+
     }//==4
     
-
-});//btEnviar
+});//btEnviarimage.pngimage.png
