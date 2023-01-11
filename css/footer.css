@@ -1,0 +1,25 @@
+/* Estilos de el footer */
+body{
+    margin: 0;
+    position: relative;
+    padding-bottom: 3em;
+    display: flex;
+	flex-direction: column;
+    min-height: 100vh;
+  }
+  
+footer{
+    padding: 1em 0;
+    background-color: #FF6F61 ;
+    position: absolute;
+    /* bottom: 0; */
+    width: 100%;
+    margin-top: auto;
+}
+
+li :hover{
+    color: black;
+}
+.nav-item :hover{
+    color: black;
+}
