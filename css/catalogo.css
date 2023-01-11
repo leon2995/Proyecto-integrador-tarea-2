@@ -7,3 +7,38 @@
 .card-text {
     text-align:justify;
 }
+@-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(1, 1);
+    }
+    to {
+      -webkit-transform: scale(1.5, 1.5);
+    }
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+  }
+  
+  .carousel-item > img {
+    -webkit-animation: zoom 20s;
+    animation: zoom 20s;
+  }    
+  .precio {
+    margin-left: 70%;
+
+
+}
+.card-text1{
+    margin: auto;
+    
+}
+.descripcion{
+    text-align:justify;
+    margin: 2em;
+}
