@@ -1,70 +1,100 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
 *{
-  margin: 0;
-  padding:0;
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+body{
+    font-family: 'Cantata One';
+    display: flex;
+
+}
+main{
+    /* background: linear-gradient(rg)
+    url(/img/isla.jpeg); */
+    background: linear-gradient(rgb(255, 255, 255, 0.30), rgba(255, 255, 255, 0.30)), url(/fotos/isla.jpeg);
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
 
 
 
-main {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background: linear-gradient(135deg,#D3D70D , #FF6F61, #EE6D8A, #7e5e9a, #A32857 );
-  background-size: 400% 400%;
-  animation: fanimado 5s infinite ;
 }
-form {
-  /* margin-left: 430px; */
-  margin: auto;
-   
-}
-@keyframes fanimado{
-  0%{
-    background-position: 0% 50%;
-}
-50%{ 
-  background-position:100% 50%;
-}
-100%{
-  background-position:0% 50%;
-}
-}
-
-h1{ text-align: center;
-  font-family: Roboto;
-  color: azure;
+.form{
+    background: rgb(250, 250, 250, .7 );
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    max-height: 500px;
+    border-radius: 1em;
+    padding: 2em 2em 2em 2em; /* alto ancho del recuadro */
 
 }
+.formContact{
+    width: 100%;
+    display: grid;
+    gap: .5em;
 
 
-.form-signin {
-  max-width: 100%;
-  padding: 60px; /*  esté es el padding (largo  */
-  margin: 350px;
+}
+.formtittle{
+    text-align: left;
+}
+.formInput{
+    background: rgb(250, 250, 250, .9 );
+    font-family: inherit;
+    /* font-size: 1em;
+    padding: 1.8 1em; */
+    border-radius: 0.1em;
+    padding-bottom: .5em;
+    outline: none;
+    border: none;
+    border: 1px solid #BEBABA;
+
+
+
+}
+.formImputMessaje{
+    background: rgb(250, 250, 250, .9 );
+    font-family: inherit;
+
+    resize: none;
+    /* padding: 1.8em 1em; */
 }
 
-.form-signin .form-floating:focus-within {
-  z-index: 2;
-}
+.formcta{
+    font-family: inherit;
+    font-size: 1em;
+    background-color: #7e5e9a;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: .5em .5 em; 
+    border-radius: 0.1em;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100px;
 
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
 }
+/* @media (max-whidth:450px){
+    .form{
+        padding: 1,5em 1em;
+        background-size: cover;
+    }
+    .formContact{
+        width: 100%;
+        display: grid;
+        gap: .6em;
+        min-width: 400px;
+    }
+    main{
+        min-height:500px;
+        min-width: 200px;
+    }
 
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.form-signin input[type="text"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
+} */
