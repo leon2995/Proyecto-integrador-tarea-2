@@ -8,12 +8,13 @@
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 30px;
 }
-
+.contAlert{
+    padding: 30px;
+}
 .btn{
     background-color: #7C5D99;
     color: aliceblue;
 }
-
 body{
     background: url("/fotos/Fondos/FondoAddProduct.jpg") ;
     background-repeat:no-repeat;
