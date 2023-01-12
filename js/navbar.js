@@ -50,6 +50,7 @@ function menu() {
 
 menu();
 
+<<<<<<< HEAD
 
 
 const hambur = document.querySelector(".hamburguesa");
@@ -89,4 +90,6 @@ function pieDePag() {
   </ul>`;
 }
 pieDePag();
+=======
+>>>>>>> 8ddc5b062c2a55e5021448a0df3ceedc6b3fea0e
 
