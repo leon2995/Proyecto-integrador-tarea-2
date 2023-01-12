@@ -85,6 +85,9 @@ btnEnviar.addEventListener("click",function(event) {
         InputPrecio.style.border ="";
         InputComentario.style.border ="";
         UploadImg.style.border = "";
+        inputNombre.value = "";
+        InputPrecio.value ="";
+        InputComentario.value ="";
     }, 1000)
 
     if(validos == 4){
