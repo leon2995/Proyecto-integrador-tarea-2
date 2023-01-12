@@ -14,6 +14,7 @@ btnEnviar.addEventListener("click",function(event) {
     Alert.style.display="none";
     console.log(UploadImg.value);
     if (inputNombre.value.length ==0 || inputNombre.value.length<2) {
+        console.log(inputNombre.value.length);
         Alert.innerHTML ="Debes ingresar tu nombre .";
         Alert.style.display="block";
         inputNombre.focus();
