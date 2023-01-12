@@ -15,6 +15,11 @@
     background-color: #7C5D99;
     color: aliceblue;
 }
+
+#imagenPrevisualizacion{
+    margin-left: 40%;
+}
+
 body{
     background: url("/fotos/Fondos/FondoAddProduct.jpg") ;
     background-repeat:no-repeat;

@@ -29,8 +29,9 @@
               <input type="text" class="form-control" id="InputNombre" placeholder="Nombre">
               <label for="Input">  </label>
             </div>
-            <div class="form-floatingPrecio">
-              <input type="number" class="form-control" id="InputPrecio" placeholder="Precio del producto" step="any">
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input type="number" class="form-control" id="InputPrecio" placeholder="Precio del producto" step="any" aria-label="Amount (to the nearest dollar)">
               <label for="Input">  </label>
             </div>
             <div class="form-floatingComentario">
@@ -39,7 +40,7 @@
             </div>
             <div class="form-floating"></div>      
               <div class="input-group">
-                <input type="file" class="form-control" id="inputGroupImg04" aria-describedby="inputGroupImgAddon04" aria-label="Upload">
+                <input type="file" class="form-control" id="seleccionArchivos" aria-describedby="inputGroupImgAddon04" aria-label="Upload">
                 <button class="btn btn-outline-secondary" type="button" id="inputGroupImgAddon04">Subir</button>
               </div>
               <br>
@@ -48,11 +49,13 @@
             </div>
           </form>
           </main>
+          <div class="contimg"><br/> <img id="imagenPrevisualizacion" height="100px"width="auto"></div>
           
-      </div>
-    
-     
 
+      </div>
+
+      
+    
       <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src="/js/addProducto.js"></script>
       <!-- JavaScript del navbar -->

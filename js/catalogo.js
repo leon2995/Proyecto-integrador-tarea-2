@@ -178,3 +178,81 @@ function addItem(items){
     </div> `);   
     });
   }
+
+
+window.addEventListener("load", function(event) {
+    let tmp= localStorage.getItem("obj");
+    if(tmp!=null){
+        data = JSON.parse(tmp);
+        console.log(data);
+       
+        data.forEach(item => {
+          itemsContainer.insertAdjacentHTML("beforeend",
+      /* data.forEach(element => {
+          itemsContainer[0].innerHTML += */ `
+          <div class="card mb-3 card border-0" style="width: 5040px;" data-ride="carousel">
+          <div class="row g-0">
+            <div class="col-md-4">
+            <div id="carouselExample_${item.id}" class="carousel slide card-img-top">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="${item.img}" class="d-block w-100" alt="..." >
+            
+              </div>
+            <div class="carousel-item ">
+                  <img src="${item.img2}" class="d-block w-100" alt="..." >
+                </div>
+                <div class="carousel-item">
+                  <img src="${item.img3}" class="d-block w-100" alt="...">
+                </div>
+                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample_${item.id}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample_${item.id}" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              </div>
+              </div>
+            <div class="col-md-8">
+              <div class="card-body">
+              <h5 class="card-title">${item.title}</h5>
+              <p class="card-text">${item.resume}</p>
+            
+          <div  class="position-absolute bottom-0 end-0  d-grid gap-2 col-2 mx-auto"><a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal_${item.id}">Ver más</a></div>  
+          <!-- Modal -->
+  <div class="modal fade" id="exampleModal_${item.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Paquete</h5>
+        
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <h2 class="card-text1">Tour ${item.title}</h2>
+        <div class="descripcion">
+        ${item.text}
+  
+  <div class="precio">
+       <h1 > ${item.price}</h1>
+       </div>
+        </div>
+        <div class="modal-footer">
+         
+          <button type="button" class="btn btn-primary">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+             </div>
+          </div>
+        </div>
+      </div> `);  
+        }); 
+    }//if
+
+
+  } );
+ 
