@@ -80,15 +80,7 @@ btnEnviar.addEventListener("click",function(event) {
             validos++;
         }// else
     
-    setTimeout(function(){
-        inputNombre.style.border ="";
-        InputPrecio.style.border ="";
-        InputComentario.style.border ="";
-        UploadImg.style.border = "";
-        inputNombre.value = "";
-        InputPrecio.value ="";
-        InputComentario.value ="";
-    }, 1000)
+
 
     if(validos == 4){
         setTimeout(function(){
@@ -96,13 +88,10 @@ btnEnviar.addEventListener("click",function(event) {
             InputPrecio.style.border ="";
             InputComentario.style.border ="";
             UploadImg.style.border = "";
-              /* Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: '!Se agrego exitosamente! ',
-                showConfirmButton: false,
-                timer: 1500
-              }) */
+            inputNombre.value = "";
+            InputPrecio.value ="";
+            InputComentario.value ="";
+            UploadImg.value="";
         }, 1000)
         Swal.fire(
             '¡Se agrego exitosamente!',
@@ -110,6 +99,10 @@ btnEnviar.addEventListener("click",function(event) {
             'success'
         ) 
     }//==4
+
+    setTimeout(function(){
+        
+    }, 2000)
 
 
 });
