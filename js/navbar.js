@@ -1,50 +1,71 @@
 let navBar = document.getElementById("menu");
 
 function menu() {
-  navBar.innerHTML = `<nav class="navbar navbar-expand-lg">
-  
-  
-  <a href="/index.html">}
-  <img id="inicio" src="/fotos/logo.png">
-  </a>
+  navBar.innerHTML = ` <header class="encabezado">
+  <nav class="navegador">
 
-  <div class="container-fluid">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"> </span>
+    <a  href="/index.html">
+      <img id="ajolotito" src="/fotos/logo.png" alt="Link to homepage" id="ajolotito">
+    </a>
+
+   
+    <button class="hamburguesa" aria-labelledby="Abrir menú">
+      <i class="fas fa-bars"></i>
     </button>
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav" aria-current="page">
-        <li class="nav-item">
-          <a class="navbar-brand"  href="/html/catalogo.html">Catálogo</a>
-        </li>
-        <li class="nav-item">
-          <a class="navbar-brand" href="/html/resenas.html">Reseñas</a>
-        </li>
-        <li class="nav-item">
-          <a class="navbar-brand" href="/html/aboutus.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="navbar-brand" href="/html/contacto.html">Contacto</a>
-        </li>
+    <ul class="nave-menudo">
+      <li class="nav-menudo-item">
+        <a href="/html/catalogo.html" class="nave-menudo-link navegador-link" >Catálogo</a>
+      </li>
+      <li class="nav-menudo-item">
+        <a href="/html/resenas.html" class="nave-menudo-link navegador-link">Reseñas</a>
+      </li>
+      <li class="nav-menudo-item">
+        <a href="/html/aboutus.html" class="nave-menudo-link navegador-link">Nosotros</a>
+      </li>
+      <li class="nav-menudo-item">
+        <a href="/html/contacto.html" class="nave-menudo-link navegador-link">Contacto</a>
+      </li>
+      <li class="nav-menudo-item" id="registro">
+        <a href="/html/registro.html" class="nave-menudo-link navegador-link"
+       >Registro</a>
+      </li>
+      
+      
+      <li>
+       <a href="/index.html">
+        <img class="carrito" src="/fotos/carrito.png">
+      </a>
+      </li>
 
-      </ul>
-    </div>
-  </div>
-  <ul class="navbar-nav" aria-current="page">
-  <li class="nav-item">
-  <a class="navbar-brand" href="/html/registro.html">Registro</a>
-  </li>
-  </ul>
-  <a href="/index.html">
-    <img id="carrito" src="/fotos/carrito.png">
-  </a>
-</nav>
+
+    </ul>
+    
+
+
+  </nav>
+</header>
 `;
 }
 
 menu();
+
+
+
+const hambur = document.querySelector(".hamburguesa");
+const naveM = document.querySelector(".nave-menudo");
+
+hambur.addEventListener("click", () => {
+  naveM.classList.toggle("nave-menudo_visible");
+
+  if (naveM.classList.contains("nave-menudo_visible")) {
+    hambur.setAttribute("aria-labelledby", "Cerrar menú");
+  } else {
+    hambur.setAttribute("aria-labelledby", "Abrir menú");
+  }
+});
+
+
 
 let footer = document.getElementById("pieDePag");
 function pieDePag() {
