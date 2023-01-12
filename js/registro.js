@@ -1,4 +1,4 @@
-const InputNombre = document.getElementById("InputNombre")
+git const InputNombre = document.getElementById("InputNombre")
 const InputNumero = document.getElementById("InputNumero")
 const InputCorreo = document.getElementById("InputCorreo")
 const InputContraseña = document.getElementById("InputContraseña")
