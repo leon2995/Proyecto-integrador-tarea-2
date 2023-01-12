@@ -91,6 +91,9 @@ let data = [{
     "text":"Recorrido turístico en Guadalajara para conocer la ciudad. Se inicia conociendo la zona de La Minerva, Los Arcos de Guadalajara, el impresionante puente atirantado “Puente Matute Remus, para luego circular por la zona más exclusiva de Guadalajara en el siglo XVIII. Paramos en una de las iglesias más bellas de la Perla Tapatía: El Expiatorio, donde después de una reseña de la historia conoceremos su interior. Diviértete en el parían del nuevo Pueblo Mágico de Tlaquepaque, lugar de bellas artesanías, galerías y restaurantes, compra souvenirs tradicionales de la región",
     },
     
+//Se agregaron los 10 productos
+    // Los carruseñes cuentan con sus propios id
+    //cada uno de los productos cuentan con su precio, y texto para las tarjetas todo se manejo como areglo de objetos
 //let data
 ]
 function getData() {
@@ -111,8 +114,9 @@ getData().then((datos)=>{
     console.log(datos);
     addItem(data);
     }).catch((error)=> console.error(error.message));
-//agregar los 10 productos
-
+// Inician cards y carrusel ( recuerda que se usaron dos tipos de cards de bootstrap)
+// cada paquete iten esta anclado con los id de carusel para que recorra cada uno done debe ser cada producto
+// las imagenes cuentan con su propio item.img que a su vez cuenta con 3 imagenes
 function addItem(items){
     items.forEach(item => {
         itemsContainer.insertAdjacentHTML("beforeend",`
@@ -153,7 +157,7 @@ function addItem(items){
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Paquete</h5>
+        <h3 class="modal-title" id="exampleModalLabel">Paquete</h3>
       
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -167,7 +171,10 @@ function addItem(items){
       </div>
       <div class="modal-footer">
        
-        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+        <button type="button" class="btn btn-primary">Agregar al carrito <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg></button>
+        
       </div>
     </div>
   </div>
@@ -178,3 +185,7 @@ function addItem(items){
     </div> `);   
     });
   }
+// en el body de la cars se agregraron lo s item de resumen y titulo
+// Card emergente cuenta con sus propios item de precio y text, se repite item..title 
+// item,id esta anclado al id de la card para que sea independiente cada una.
+//Se agrego un boton de agregar a carrito con un icono de carrito todo de bootstrap con una etiqueta svg
