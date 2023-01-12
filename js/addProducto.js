@@ -19,6 +19,9 @@ btnEnviar.addEventListener("click",function(event) {
         inputNombre.focus();
         inputNombre.select();
         inputNombre.style.border = "solid red 1px"; 
+        InputComentario.style.border = "solid red 1px";
+        InputPrecio.style.border = "solid red 1px";
+        UploadImg.style.border = "solid red 1px";
         setTimeout(function(){
             Alert.style.display="none";
             Alert.innerHTML ="";
@@ -30,6 +33,7 @@ btnEnviar.addEventListener("click",function(event) {
         InputPrecio.focus();
         InputPrecio.select();
         InputPrecio.style.border = "solid red 1px";
+        
         setTimeout(function(){
             Alert.style.display="none";
             Alert.innerHTML ="";
@@ -80,6 +84,7 @@ btnEnviar.addEventListener("click",function(event) {
         inputNombre.style.border ="";
         InputPrecio.style.border ="";
         InputComentario.style.border ="";
+        UploadImg.style.border = "";
     }, 1000)
 
     if(validos == 4){
@@ -87,7 +92,7 @@ btnEnviar.addEventListener("click",function(event) {
             inputNombre.style.border ="";
             InputPrecio.style.border ="";
             InputComentario.style.border ="";
-           
+            UploadImg.style.border = "";
               /* Swal.fire({
                 position: 'top-end',
                 icon: 'success',
