@@ -26,21 +26,21 @@
           <form class="form">
             <h1 id="Titulo" class="h2 mb-3 ">Registrar producto</h1>
             <div class="form-floatingNombre">
-              <input type="text" class="form-control" id="InputNombre" placeholder="Nombre">
+              <input type="text" class="form-control" id="InputNombre" placeholder="Nombre" oninput="validate(this)"  >
               <label for="Input">  </label>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text">$</span>
-              <input type="number" class="form-control" id="InputPrecio" placeholder="Precio del producto" step="any" aria-label="Amount (to the nearest dollar)">
+              <input type="text" class="form-control" id="InputPrecio" placeholder="Precio del producto" step="any" aria-label="Amount (to the nearest dollar)" oninput="validateNumbers(this)">
               <label for="Input">  </label>
             </div>
             <div class="form-floatingComentario">
-             <textarea name="comentario" type="text" id="InputComentario" class="form-control"  placeholder="Comentario"></textarea>
+             <textarea name="comentario" type="text" id="InputComentario" class="form-control"  placeholder="Comentario" oninput="validateDescripcion(this)" ></textarea>
              <label for="Input"></label>
             </div>
             <div class="form-floating"></div>      
               <div class="input-group">
-                <input type="file" class="form-control" id="seleccionArchivos" aria-describedby="inputGroupImgAddon04" aria-label="Upload">
+                <input type="file" class="form-control" id="seleccionArchivos" aria-describedby="inputGroupImgAddon04" aria-label="Upload" oninput="validateInputFormatIMG(this)" >
                 <button class="btn btn-outline-secondary" type="button" id="inputGroupImgAddon04">Subir</button>
               </div>
               <br>

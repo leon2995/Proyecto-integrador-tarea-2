@@ -49,6 +49,11 @@ btnEnviar.addEventListener("click",function(event) {
         setTimeout(function(){
             Alert.style.display="none";
             Alert.innerHTML ="";
+
+            inputNombre.style.border = ""; 
+            InputComentario.style.border = "";
+            InputPrecio.style.border = "";
+            UploadImg.style.border = "";
         }, 2000)
         
     }else if (InputPrecio.value.length == 0) {
@@ -143,7 +148,7 @@ btnEnviar.addEventListener("click",function(event) {
             "text":"El paraíso tiene un nuevo nombre: Isla Contoy, la única isla virgen del Caribe Mexicano. Prepárate para disfrutar y enamorarte de la belleza y actividades de este hermoso Parque Nacional. Si lo que buscas es disfrutar de una bella playa de arena fina y aguas tranquilas y cristalinas, te contamos por que debes visitar esta maravillosa isla, una auténtica joya natural. Relaja tu mente, cuerpo y alma y descubre una sensación de tranquilidad total, sus contrastes entre agua turquesa y arena blanca quedarán marcados a fuego en las retinas de todo aquel que la visite. Además disfrutarás de una actividad de snorkel en uno de los arrecifes de coral más grandes del mundo",
             },
             {"id": 5,
-            "title": "San Miguel de Ayende",
+            "title": "San Miguel de Allende",
             "resume": "Este pueblo de interesantes construcciones virreinales está asentado a los pies de uno de los peñones más llamativos del continente americano, con vasta vegetación entre las rocas. Todo está ligado a interesantes leyendas e historias que la gente cuenta, en un ambiente provinciano ideal para el descanso",
             'img':'/fotos/FotosActividades/ActSMA01.jpg',
             'img2':'/fotos/FotosActividades/ActSMA02.jpg',
@@ -232,8 +237,33 @@ btnEnviar.addEventListener("click",function(event) {
 
 });
 
+let productNameRegex = /^[A-Z][a-z\s]*$/;
+function validate(input) {
+    let value = input.value;
+    let isValid = productNameRegex.test(value);
+    input.style.borderColor = isValid ? "green" : "red";
+}
 
 
+function validateNumbers(input) {
+    let value = input.value;
+    let isValid = !isNaN(value) && value > 0;
+    input.style.borderColor = isValid ? "green" : "red";
+}
+
+let productDescriptionRegex = /^[a-zA-Z0-9\s,\.\?]*$/;
+function validateDescripcion(input) {
+    let value = input.value;
+    let isValid = productDescriptionRegex.test(value);
+    input.style.borderColor = isValid ? "green" : "red";
+}
+
+regexImg
+function validateInputFormatIMG(input) {
+    let value = input.value;
+    let isValid = regexImg.test(value);
+    input.style.borderColor = isValid ? "green" : "red";
+}
 
 /* addItem({'img1':'https://a.cdn-hotels.com/gdcs/production76/d1681/e2088a33-187a-4e40-b014-f7442c831f68.jpg?impolicy=fcrop&w=800&h=533&q=medium',
 'img2':'https://content.r9cdn.net/rimg/dimg/99/b2/20036525-city-18853-1653972eb13.jpg?crop=true&width=1366&height=768&xhint=1500&yhint=1333',
