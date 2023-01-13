@@ -1,0 +1,48 @@
+body{
+background-image: url(/fotos/11.png);
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+.titulo{
+margin-top:8%;
+color: #FF6F61;
+text-align: center;
+}
+
+#browser{
+    margin-top:31%;
+    margin-left:25%;
+    width: 50%;
+    
+}
+
+.btn{
+    background-color: #7C5D99;
+    border: none;
+}
+
+.container{
+    margin-top: 5%;
+    
+}
+.card{
+display: inline-block;
+margin-left: 1%;
+}
+
+.containerClass{
+ margin-left:10%;
+}
+
+.header{
+    width: 35.5cm;
+    height: 15cm;
+}
+
+.ia{
+    margin-top: 3cm;
+    margin-left: 10%;
+    width: 28cm;
+    height: 8cm;
+}

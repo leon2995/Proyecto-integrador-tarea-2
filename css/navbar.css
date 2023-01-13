@@ -1,107 +1,182 @@
-/* Estilos de el footer */
-body{
+*{
     margin: 0;
-    position: relative;
-    padding-bottom: 2em;
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
+    box-sizing: border-box;
   }
   
-footer{
-    padding: 1em 0;
-    background-color: #FF6F61 ;
-    position: absolute;
-    bottom: 0;
+  body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+  }
+  
+  .encabezado {
+    background-color: #1b89d3;
+    height: 80px;
+    position: fixed;
     width: 100%;
-  
-  
-    
+    top: 0;
+    left: 0;
   }
-/* logo */ 
-#inicio {
-	width: 60px;
-	height: 60px;
+  
+  #ajolotito {
+	width: 50%;
 	height: auto;
-	margin-left: 50px;
-}
+  }
+  
 
-/* NAVBAR*/
-.container-fluid{
-    width: auto ;margin: auto; 
-}
-.navbar-expand-lg{
-    background-color: #277fbb
-    ;
-}
+  .navegador {
+    display: flex;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .navegador-link {
+    color:white;
+    text-decoration: none;
+    background: #00646B;
+
+    position: relative;
+    padding: 5px 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 150px;
+    height: center;
+    margin-bottom: 10px; /* es lo que ahorita esta en azul*/
+    overflow: hidden;
+    color:black;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+    text-decoration: none;
+    transition: all ease 0.5s;
+  }
+  
 
 
-.navbar-brand{
-	position: relative;
-	display: block;
-	padding: 5px 15px;
-	border-radius: 6px;
-	text-align: center;
-	font-weight: bold;
-	max-width: 150px;
-	height: center;
-	margin-bottom: 10px; /* es lo que ahorita esta en azul*/
-	overflow: hidden;
-	color:rgba(255,255,255,1);
-	cursor: pointer;
-	letter-spacing: 1px;
-	box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
-	text-decoration: none;
-	transition: all ease 0.5s;
-	background: #00646B
-}
+  .nave-menudo {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menudo-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nave-menudo-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nave-menudo-link:hover
+   {
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    background-color: #0084a1;
+    transition: 0.5s;
+  }
+  
+  /* TOGGLE (boton despegable)*/
+  .hamburguesa {
+    color: rgba(255, 255, 255, 0.893);
+    background: none; /*none*/
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+    position: absolute;
+    right: 20px;
+    top:0;
+  }
 
- 
-.navbar-brand:after,
-.navbar-brand:before{
-	width: 80px;
-	height: 200px;
-	content: '';
-	display: block;
-	background: rgba(255,255,255,0.5);
-	transform: rotate(45deg);
-	top: -60px;
-	position: absolute;
-	transition: none;
-	right:-45%;
-	cursor: pointer;
-}
 
-.navbar-brand:before{
-	left: -48%;
-}
- 
-.navbar-brand:hover{
-	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-	background: #0084a1
-}
- 
-.navbar-brand:hover:after,
-.navbar-brand:hover:before{
-	transform: rotate(45deg), scaleX(130%);
-	background: rgba(255,255,255,0.1);
-	transition: all ease 0.5s;
-}
- 
-.navbar-brand:hover:after{
-	right: 100%;
-}
-
-.navbar-brand:hover:before{
-	left: 100%;
-}
-
-/* NAVBAR */ 
-
-#carrito{
-	margin-right: 70px;
-	padding-right: 10px;
+.carrito{	
 	width: 40px;
-	height:40px;	
+  	height: 50px;
+    margin-top: 10px;
+
 }
 
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px;
+    }
+  
+    .encabezado {
+      height: 60px;
+    }
+  
+    .ajolotito {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+  
+    .nave-menudo {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #277fbb;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(62% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menudo-item {
+      line-height: 70px;
+    }
+  
+    .nave-menudo-link:hover,
+    .nave-menudo-link_active {
+      background: white;
+      color:#00646B;
+    }
+  
+    .hamburguesa {
+      display: block;
+    }
+  
+    .nave-menudo_visible {
+      left: 0;
+    }
+  
+    .hamburguesa:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+
+
+
+
+  #registro{
+    margin-left: 20%;
+  }
+
+  @media (max-width: 550px){
+    #registro{
+    margin-left: 2%;
+
+    }
+    }
+
+    @media (max-width: 900px){
+        #registro{
+        margin-left: 2%;
+    
+        }
+        }
