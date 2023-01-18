@@ -9,7 +9,7 @@
 
    <container>
    <br>
-   <h3> Funcionalidades: </h3>
+   <h3> Descripción: </h3>
    El Proyecto muestra la funcionalidad de una página web que tiene como objetivo principal vender tours a quienes lo visiten.
    </container>
    
