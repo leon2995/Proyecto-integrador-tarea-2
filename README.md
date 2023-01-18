@@ -1,7 +1,7 @@
 <h1 align="center"> AXOLOTL ADVENTURES </h1>
   <p align="left">
-   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">!
-   [Logp por Dani](https://user-images.githubusercontent.com/119557788/213061955-63a12040-e486-4239-a09f-0f557de44fa1.png)
+   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
+   ! [Logo por Dani](https://github.com/leon2995/Proyecto-integrador-tarea-2/blob/develop/fotos/logo2.png)
 
    </p>
    ![Logo por Leon](https://user-images.githubusercontent.com/119557788/213061902-a8383457-eb4a-4a36-9531-11eda0b989dc.png)
