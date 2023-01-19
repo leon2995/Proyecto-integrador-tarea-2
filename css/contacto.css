@@ -1,100 +1,44 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Cantata One';
-    display: flex;
-
-}
-main{
-    /* background: linear-gradient(rg)
-    url(/img/isla.jpeg); */
-    background: linear-gradient(rgb(255, 255, 255, 0.30), rgba(255, 255, 255, 0.30)), url(/fotos/isla.jpeg);
-    background-repeat: no-repeat;
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
-    height: 100vh;
-    background-position: center center;
-    background-size: cover;
-
-
-
-}
-.form{
-    background: rgb(250, 250, 250, .7 );
-    width: 90%;
-    margin: auto;
-    max-width: 400px;
-    max-height: 500px;
-    border-radius: 1em;
-    padding: 2em 2em 2em 2em; /* alto ancho del recuadro */
-
-}
-.formContact{
-    width: 100%;
-    display: grid;
-    gap: .5em;
-
-
-}
-.formtittle{
-    text-align: left;
-}
-.formInput{
-    background: rgb(250, 250, 250, .9 );
-    font-family: inherit;
-    /* font-size: 1em;
-    padding: 1.8 1em; */
-    border-radius: 0.1em;
-    padding-bottom: .5em;
-    outline: none;
-    border: none;
-    border: 1px solid #BEBABA;
-
-
-
-}
-.formImputMessaje{
-    background: rgb(250, 250, 250, .9 );
-    font-family: inherit;
-
-    resize: none;
-    /* padding: 1.8em 1em; */
-}
-
-.formcta{
-    font-family: inherit;
-    font-size: 1em;
-    background-color: #7e5e9a;
-    color: #fff;
-    border: none;
-    font-weight: 300;
-    padding: .5em .5 em; 
-    border-radius: 0.1em;
-    cursor: pointer;
-    font-weight: 500;
-    width: 100px;
-
-}
-/* @media (max-whidth:450px){
-    .form{
-        padding: 1,5em 1em;
-        background-size: cover;
-    }
-    .formContact{
-        width: 100%;
-        display: grid;
-        gap: .6em;
-        min-width: 400px;
-    }
-    main{
-        min-height:500px;
-        min-width: 200px;
-    }
-
-} */
+.container{
+    /*  position: absolute;  */
+    display: block;
+     width: 622px;
+     height: 600px; 
+     left: 890px;
+     top: 248px; 
+     background: rgba(255, 255, 255, 0.8);
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     padding: 30px;
+     margin-top: 50px;
+     justify-content: center;
+    background-attachment: unset;
+    margin-bottom: 50px;
+ }
+ 
+ .tituloContacto{
+     font-size: 40px;
+     margin-bottom:20px;
+     color: #e23d82;
+     }
+     
+ 
+ .btn{
+     background-color: #e23d82;
+     color: aliceblue;
+     margin-left: 40%;
+ }
+ 
+ 
+ 
+ body{
+     background: url("/fotos/Fondos/peakpx.jpg") ;
+     background-repeat:no-repeat;
+     background-size: cover;
+ }
+ input[type=number]::-webkit-inner-spin-button, 
+ input[type=number]::-webkit-outer-spin-button { 
+   -webkit-appearance: none; 
+   margin: 0; 
+ }
+ 
+ input[type=number] { -moz-appearance:textfield; }

@@ -1,3 +1,4 @@
+/*SIN USO*/
 *{
     margin: 0;
     box-sizing: border-box;
@@ -5,35 +6,36 @@
   
   body {
     font-family: sans-serif;
-    padding: 90px 20px 0;
+    padding: 90px 0 0;
   }
   
   .encabezado {
     background-color: #1b89d3;
     height: 80px;
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
   }
   
   #ajolotito {
-	width: 50%;
-	height: auto;
+	width: 30%;
+	height:auto;
+  margin-top: -1%;
+  
   }
   
-
   .navegador {
     display: flex;
     max-width: 992px;
     margin: 0 auto;
   }
-  
+
+
   .navegador-link {
     color:white;
     text-decoration: none;
-    background: #00646B;
-
+    background:none;
     position: relative;
     padding: 5px 15px;
     border-radius: 6px;
@@ -43,12 +45,12 @@
     height: center;
     margin-bottom: 10px; /* es lo que ahorita esta en azul*/
     overflow: hidden;
-    color:black;
+    color:white;
     cursor: pointer;
     letter-spacing: 1px;
-    box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
     text-decoration: none;
     transition: all ease 0.5s;
+   
   }
   
 
@@ -96,11 +98,9 @@
   }
 
 
-.carrito{	
-	width: 40px;
-  	height: 50px;
-    margin-top: 10px;
-
+.bi-cart-plus{	
+  margin-top: 40%;
+	 
 }
 
 
@@ -115,9 +115,10 @@
     }
   
     .ajolotito {
-      font-size: 25px;
-      padding: 0 20px;
-      line-height: 60px;
+      font-size: 50px;
+      padding: 0 50px;
+      line-height: 100px;
+      z-index: 1;
     }
   
     .nave-menudo {
@@ -125,12 +126,13 @@
       align-items: center;
       margin: 0;
       background-color: #277fbb;
-      position: fixed;
+      position: absolute;
+      z-index: 2;
       top: 60px;
       width: 100%;
       padding: 20px 0;
   
-      height: calc(62% - 60px);
+      height: calc(400px);
       overflow-y: auto;
   
       left: 100%;

@@ -12,36 +12,72 @@
     <link rel="stylesheet" href="/css/navbar.css">
      <!-- Estilos footer -->
      <link rel="stylesheet" href="/css/footer.css">
-    <title>Contacto</title>
-    
-    
 
+     <script
+     src="https://kit.fontawesome.com/7e5b2d153f.js"
+     crossorigin="anonymous"
+   ></script>
+   <title>Contacto</title>
+
+  </head>
+  <body>
+    <section>
+      <div id="menu"></div>  <!-- Esté es el menú de navegacion navBar -->
+    </section>
    
-</head>
-<body> 
-  <section>
-    <div id="menu"></div>  <!-- Esté es el menú de navegacion navBar -->
-
-  </section>
-
   
-
-  <main>
-
-
-    <form class="form" action="">
-      <div class="formContact"  >
-          <h2 class="formtittle">Contacto</h2>
-          <input type="text" class="formInput" name="nombre" placeholder="Nombre">
-          <input type="email" class="formInput" name="email" placeholder="Correo">
-          <input type="telefono" class="formInput" name="telefono" placeholder="Teléfono">
-          <textarea name="Comentario" class="formInput formImputMessaje" placeholder="Mensaje" id="" cols="30" rows="10"></textarea>
-          <input type="submit" value="Enviar" class="formcta" >
-
-
-      </div>
-    </form>
-  </main>
+    <div class="container" id="container">
+    
+    <!--fin alertas -->
+   <!-- inicio alertas -->
+   <div class="alert alert-success" role="alert" style="display: none" id="alert-success">
+  </div> <!-- alert-success -->
+  <div class="alert alert-danger" role="alert" style="display: none" id="AlertEscritura">
+  </div> <!-- alertEscritura -->
+    <!-- encabezado -->
+    
+    <h2 class="tituloContacto">Contáctanos</h2>
+    <br />
+  
+    <!-- Inicio formulario -->
+  
+      <form class="formCuenta"> <!--form-->
+  
+        <div class="mb-3 row"><!--Nombre-->
+          <label for="InputNombre" class="col-sm-2 col-form-label"> 
+          <h5 class="subtitleForm">Nombre:</h5>
+        </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="InputNombre" placeholder="Nombre completo"/>
+          </div> 
+        </div><!-- cierre Nombre-->
+        <div class="mb-3 row"><!--email-->
+          <label for="InputCorreo" class="col-sm-2 col-form-label"><h5 class="subtitleForm">Correo:</h5>
+            </label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="InputCorreo" placeholder="email@ejemplo.com"/>
+          </div>
+        </div><!--cierre email-->
+  
+        <div class="mb-3 row"><!--Numero-->
+          <label for="InputTelefono" class="col-sm-2 col-form-label"><h5 class="subtitleForm">Teléfono:</h5>
+        </label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="InputTelefono" placeholder="Teléfono"/>
+          </div>
+        </div><!--Cierre Numero-->
+        <div class="mb-3"><!--textArea-->
+          <label for="InputComentario" class="form-label"><h5 class="subtitleForm">Mensaje:</h5></label>
+          <textarea class="form-control" id="InputComentario" rows="3"></textarea>
+        </div><!--textArea-->
+        <div class="btnEnviar"> <!--btn-enviar-->
+          <button type="submit" class="btn btn-new btn-lg btn-primary" id="btnEnviar">
+            Enviar
+          </button> <!--boton-->
+        </div> <!--cierre btn-enviar-->
+        
+      </form> <!--cierre form-->
+    </div> 
     <!--JavaScript Pie de página-->
   <div id="pieDePag"></div>
     

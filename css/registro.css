@@ -1,0 +1,38 @@
+
+.container{
+    /*  position: absolute;  */
+    display: block;
+     width: 622px;
+     height: 550px; 
+     left: 690px;
+     top: 248px; 
+     background: rgba(255, 255, 255, 0.8);
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     padding: 30px;
+     margin-top: 50px;
+     justify-content: center;
+    background-attachment: unset;
+    margin-bottom: 50px;
+ }
+ 
+ .tituloRegistro{
+     font-size: 40px;
+     margin-bottom:20px;
+     color: #e23d82;
+     }
+     
+ 
+ .btn{
+     background-color: #e23d82;
+     color: aliceblue;
+     margin-left: 100px;
+ }
+ 
+ 
+ 
+ body{
+     background: url("/fotos/Fondos/peakpx.jpg") ;
+     background-repeat:no-repeat;
+     background-size: cover;
+ }
+ 
