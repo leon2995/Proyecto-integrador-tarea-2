@@ -1,4 +1,3 @@
-
 let InputCorreo = document.getElementById("InputCorreo");
 let AlertEscritura = document.getElementById("AlertEscritura");
 let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ ;
@@ -6,6 +5,7 @@ let btnEnviar = document.getElementById("btnEnviar");
 let InputNombre = document.getElementById("InputNombre");
 let InputTelefono = document.getElementById("InputTelefono");
 let InputComentario = document.getElementById("InputComentario");
+let alertSuccess = document.getElementById('alert-success');
 let idTimeout;
 let validos = 0;
 
@@ -21,7 +21,7 @@ btnEnviar.addEventListener("click", function(event){
         InputTelefono.style.border = "solid green 1px";
         validos++;
     }// else
-
+    
 
     if (InputCorreo.value.match(emailRegex) == null) {
         AlertEscritura.style.display = "block";
@@ -52,35 +52,38 @@ btnEnviar.addEventListener("click", function(event){
         InputComentario.focus(); 
         InputComentario.select();
         InputComentario.style.border = "solid red 1px";
+        
     }//if
     else{
         InputComentario.style.border = "solid green 1px";
         validos++;
-    }
-
-    if(validos == 4){
-        console.log(InputCorreo.value);
-        setTimeout(function(){
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "aajolote9.adventure@gmail.com",
-                Password : "1B35D6E2483ABB0DFB136766A57A96C6E0F2",
-                To : 'aajolote9.adventure@gmail.com',
-                From : 'aajolote9.adventure@gmail.com', 
-                Subject : "Adventure Travel Contact",
-                Body : ` ${InputNombre.value} quiere ponerse en contacto.
-                Su correo es: ${InputCorreo.value}.
-                Su telefono es: ${InputTelefono.value}.
-                Su comentario:  ${InputComentario.value} `
-            }).then(
-              message => alert(message)
-            );
+    }//else
+   
+  
+    if(validos == 4){    
+   
+    console.log(InputCorreo.value);
+    Email.send({
+    Host : "smtp.elasticemail.com",
+        Username : "aajolote9.adventure@gmail.com",
+            Password : "1B35D6E2483ABB0DFB136766A57A96C6E0F2",
+            To : 'aajolote9.adventure@gmail.com',
+            From : 'aajolote9.adventure@gmail.com', 
+        Subject : "Adventure Travel Contact",
+        Body : ` ${InputNombre.value} quiere ponerse en contacto.
+            Su correo es: ${InputCorreo.value}.
+            Su telefono es: ${InputTelefono.value}.
+            Su comentario:  ${InputComentario.value} `
+        }).then((message) => alert(message));//then 
+        setTimeout(function () {
             InputCorreo.style.border ="";
             InputNombre.style.border ="";
             InputTelefono.style.border ="";
-            InputComentario.style.border ="";
-        }, 2000)
-
-    }//==4
-    
-});//btEnviarimage.pngimage.png
+            InputComentario.style.border =""; 
+            alertSuccess.innerHTML = "Su mensaje fue enviado con éxito ";
+            alertSuccess.style.display = 'block';
+                         }, 2000);
+        
+          
+    }//==4 
+});//Email send

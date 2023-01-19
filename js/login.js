@@ -30,7 +30,7 @@ btnIniciar.addEventListener('click', function (event) {
 
     if (usuarioEncontrado) {
         // Redireccion en caso exitoso
-        window.location.href = "./index.html";
+        window.location.href ="/index.html";
     } else {
         
         // Mostrar mensaje de error si la validacion falla

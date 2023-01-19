@@ -1,31 +1,40 @@
 #cont{
-   /*  position: absolute;  */
-    width: 622px;
-    height: 439px; 
-    left: 690px;
-    top: 248px; 
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    padding: 30px;
-}
-.contAlert{
-    padding: 30px;
-}
-.btn{
-    background-color: #7C5D99;
-    color: aliceblue;
-}
-
-#imagenPrevisualizacion{
-    margin-left: 40%;
-}
-
-body{
-    background: url("/fotos/Fondos/FondoAddProduct.jpg") ;
-    background-repeat:no-repeat;
-    background-size: cover;
-}
-
-.h2{
-    color: #A23256;
-}
+    /*  position: absolute;  */
+     width: 622px;
+     height: 439px; 
+     left: 690px;
+     top: 248px; 
+     background: rgba(255, 255, 255, 0.8);
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     padding: 30px;
+     margin-top: 60px;
+     
+ }
+ .contAlert{
+     padding: 30px;
+ }
+ .btn{
+     background-color:#e23d82;
+     color: aliceblue;
+ }
+ 
+ #imagenPrevisualizacion{
+     margin-left: 40%;
+ }
+ 
+ body{
+    background: url("/fotos/Fondos/peakpx.jpg") ;
+     background-repeat:no-repeat;
+     background-size: cover;
+ }
+ 
+ .h2{
+     color: #e23d82;
+ }
+ input[type=number]::-webkit-inner-spin-button, 
+ input[type=number]::-webkit-outer-spin-button { 
+   -webkit-appearance: none; 
+   margin: 0; 
+ }
+ 
+ input[type=number] { -moz-appearance:textfield; }

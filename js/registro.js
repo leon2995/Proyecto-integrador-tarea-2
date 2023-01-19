@@ -1,38 +1,75 @@
-const InputNombre = document.getElementById("InputNombre")
-const InputNumero = document.getElementById("InputNumero")
-const InputCorreo = document.getElementById("InputCorreo")
-const InputContraseña = document.getElementById("InputContraseña")
-const parrafo = document.getElementById("warnings")
-let btnEnviar=document.getElementById("btnEnviar");
+//Variables globales
+let btnEnviar = document.getElementById('btn-enviar');
+let dataUser = JSON.parse(localStorage.getItem('dataUser')) || [];
 
-btnEnviar.addEventListener("click",function(event) {
+// Validaciones
+function validaNombre(nombre) {
+  return nombre.trim().replace(/ /g, '').length >= 3;
+}
+function validaCorreo(correo) {
+    let email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return correo.match(email) !== null;
+}
+function validaTelefono(telefono) {
+  let telefonoRegex = /^\d{10}$/;
+  return telefono.match(telefonoRegex) !== null;
+}
+function validaPassword(password) {
+  let passwordRegex = /(?=(.*[0-9]))(?=.*[\!@#$%^&*()\\[\]{}\-_+=|:;"'<>,./?])(?=.*[a-z])(?=(.*[A-Z]))(?=(.*)).{8,}/;
+  return password.match(passwordRegex) !== null;
+}
+
+// Manejo de eventos
+btnEnviar.addEventListener('click', function (event) {
     event.preventDefault();
-    let warnings = ""
-    let entrar = false
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-    parrafo.innerHTML = ""
-    if(InputNombre.value.length <3){
-        warnings += `El nombre no es valido <br>`
-        entrar = true
-    }//if
-    if(InputNumero.value.length <10){
-        warnings += `El número no es válido <br>`
-        entrar = true
-    }//if
-    if(!regexEmail.test(InputCorreo.value)){
-        warnings += `El email no es valido <br>`
-        entrar = true
-    }//if
-    if(InputContraseña.value.length < 4){
-        warnings += `La contraseña no es valida <br>`
-        entrar = true
-    }//if
+    let inputNombre = document.getElementById('nombre');
+    let inputEmail = document.getElementById('correo');
+    let inputTel = document.getElementById('telefono');
+    let inputPassword = document.getElementById('password');
+    let alertError = document.getElementById('alert-error');
+    let alertSuccess = document.getElementById('alert-success');
 
-    if(entrar){
-        parrafo.innerHTML = warnings
-    }//if
-    
-    else{
-        parrafo.innerHTML = "Enviado"
-    }//else
-});//event,clik
+    alertError.style.display = 'none';
+    alertError.innerHTML = '';
+
+    if (validaNombre(inputNombre.value) &&
+        validaCorreo(inputEmail.value) &&
+        validaTelefono(inputTel.value) &&
+        validaPassword(inputPassword.value)) {
+            // Agregar los datos del usuario al arreglo
+            dataUser.push({
+              nombre: inputNombre.value,
+              correo: inputEmail.value,
+              telefono: inputTel.value,
+              password: inputPassword.value
+          });
+  
+          // Almacenar el objeto en el LocalStorage
+          localStorage.setItem('dataUser', JSON.stringify(dataUser));
+  
+          // Mostrar mensaje de éxito
+          alertSuccess.innerHTML = "Registro exitoso";
+          alertSuccess.style.display = 'block';
+          inputNombre.value = '';
+          inputEmail.value = '';
+          inputTel.value = '';
+          inputPassword.value = '';
+      } else {
+          // Mostrar mensajes de error
+          if (!validaNombre(inputNombre.value)) {
+              alertError.innerHTML += 'El nombre debe contener 3 caracteres o más.';
+          }
+          if (!validaCorreo(inputEmail.value)) {
+              alertError.innerHTML += 'El correo electrónico no es válido.';
+          }
+          if (!validaTelefono(inputTel.value)) {
+              alertError.innerHTML += 'El teléfono no es válido.';
+          }
+          if (!validaPassword(inputPassword.value)) {
+              alertError.innerHTML += 'La contraseña no es válida.';
+          }
+          alertError.style.display = 'block';
+      }
+      
+  });
+  

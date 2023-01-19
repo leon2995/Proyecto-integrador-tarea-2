@@ -1,14 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
-    ><!-- bootstrap-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--falta referenciar esto-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <!-- Estilos footer -->
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js"crossorigin="anonymous" ></script>
     <title>LogIn</title>
   </head>
 
   <body>
+    <section>
+        <div id="menu"></div>  <!-- Esté es el menú de navegacion navBar -->
+    </section>
     <!--Inicio LogIn-->
     <div class="container" id="container">
 
@@ -29,32 +38,38 @@
 
         <!--email-->
         <div class="mb-3">
-          <label for="InputEmail" class="form-label">Email address</label>
+          <label for="InputEmail" class="form-label"> <h5> Correo Electronico</h5></label>
           <input type="email" class="form-control" id="correo" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <div id="emailHelp" class="form-text"><h6>Su correo esta protegido con nosotros.</h6></div>
         </div> <!--fin email-->
 
         <!--password-->
         <div class="mb-3">
-          <label for="InputPassword" class="form-label">Password</label>
+          <label for="InputPassword" class="form-label"><h5>Contraseña</h5></label>
           <input type="password" class="form-control" id="password">
         </div>
         <!--fin password-->
         
         <!--bnt-iniciar-->
-        <button type="submit" id="btn-iniciar" class="btn btn-primary">Submit</button>
+        <button type="submit" id="btn-iniciar" class="btn btn-primary ">Enviar</button>
 
        </form> <!--fin form-->
 
     </div> <!--cierre container-->
-
+    <div id="pieDePag"></div>
     <!--Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!--Popper and Bootstrap JS -->
-   <script src="local.js"></script>
+   <!--Pie de página-->
+   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-   
+    <script src="/js/login.js"></script>
+  <!-- JavaScript del navbar -->
+  <script src="/js/navbar.js"></script>
+  <!-- JavaScript footer-->
+  <script src="/js/footer.js"></script>
+  
   </body>
 </html>
