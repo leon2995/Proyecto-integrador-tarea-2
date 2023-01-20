@@ -60,18 +60,7 @@ menu();
 
 
 
-const hambur = document.querySelector(".hamburguesa");
-const naveM = document.querySelector(".nave-menudo");
 
-hambur.addEventListener("click", () => {
-  naveM.classList.toggle("nave-menudo_visible");
-
-  if (naveM.classList.contains("nave-menudo_visible")) {
-    hambur.setAttribute("aria-labelledby", "Cerrar menú");
-  } else {
-    hambur.setAttribute("aria-labelledby", "Abrir menú");
-  }
-});
 
 
 
