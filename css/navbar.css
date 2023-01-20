@@ -1,37 +1,26 @@
-*{
+/* *{
     margin: 0;
     box-sizing: border-box;
   }
-  
+   */
   body {
     font-family: sans-serif;
-    padding: 90px 0 0;
+    /* padding: 90px 0 0; */
+    /* background-color: #1b89d3; */
   }
-  
-  .encabezado {
+  nav{
     background-color: #1b89d3;
-    height: 80px;
-    position: absolute;
     width: 100%;
+    position: absolute;
     top: 0;
     left: 0;
   }
   
   #ajolotito {
-	width: 30%;
-	height:auto;
-  margin-top: 5%;
- 
-  
+	width: 25%;
+	height: 25%;
   }
   
-  .navegador {
-    display: flex;
-    max-width: 992px;
-    margin: 0 auto;
-  }
-
-
   .navegador-link {
     color:white;
     text-decoration: none;
@@ -50,28 +39,18 @@
     letter-spacing: 1px;
     text-decoration: none;
     transition: all ease 0.5s;
-   
   }
   
-
-
-  .nave-menudo {
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
+  .nav-item{
+    margin-right: 10px;
   }
-  
+
   .nav-menudo-item {
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
     text-transform: uppercase;
     width: max-content;
-  }
-  
-  .nave-menudo-link {
-    padding: 8px 12px;
-    border-radius: 3px;
   }
   
   .nave-menudo-link:hover
@@ -81,160 +60,3 @@
     transition: 0.5s;
   }
   
-
-/*BOTON DROP*/
-.spanSesion{
-  font-weight: bold;
-  color:white;
-  letter-spacing: 1px;
-  font-size: 18px;
-  font-family: sans-serif;
-  margin-left: 0%;
-}
-
-.boton-container{
-  position: relative;
-  display: grid;
-  place-items: center; /* centra tanto horizontal como verticalmente */
-  }
-
-  .boton-container ul{
-    display: none; /* ocultar la lista por defecto */
-    position: absolute;
-    max-height: 0px;
-    overflow: hidden;
-    transition:all 1s;
-    list-style-type:none;
-    left: 0px;
-    padding: 0px;
-    top: 0.8em;
-}
-
-.boton-container ul li{
-  width: 145px;
-  background-color: none;
-  background-color: #1b89d3;
-  
-}
-
-.boton-container:hover ul{
-    display: block; /* mostrar la lista cuando el cursor esté sobre el contenedor */
-}
-
-.boton-container:hover ul, .boton-container:hover ul.show {
-  max-height: 100px;
-  }
-
-
-  /* TOGGLE (boton despegable)*/
-  .hamburguesa {
-    color: rgba(255, 255, 255, 0.893);
-    background: none; /*none*/
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-    cursor: pointer;
-  
-    display: none;
-    position: absolute;
-    right: 20px;
-    top:0;
-  }
-
-
-.bi-cart-plus{	
-  margin-top: 40%;
-	 
-}
-
-
-  /* MOBILE */
-  @media (max-width: 768px) {
-    body {
-      padding-top: 50px;
-    }
-  
-    .encabezado {
-      height: 60px;
-    }
-  
-    .ajolotito {
-      font-size: 50px;
-      padding: 0 0px;
-      line-height: 100px;
-      
-    }
-  
-    .nave-menudo {
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
-      background-color: #277fbb;
-      position: absolute;
-      z-index: 2;
-      top: 60px;
-      width: 100%;
-      padding: 20px 0;
-  
-      height: calc(400px);
-      overflow-y: auto;
-  
-      left: 100%;
-      transition: left 0.3s;
-    }
-  
-    .nav-menudo-item {
-      line-height: 70px;
-    }
-  
-    .nave-menudo-link:hover,
-    .nave-menudo-link_active {
-      background: white;
-      color:#00646B;
-    }
-  
-    .hamburguesa {
-      display: block;
-    }
-  
-    .nave-menudo_visible {
-      left: 0;
-    }
-  
-    .hamburguesa:focus:not(:focus-visible) {
-      outline: none;
-    }
-  }
-
-
-
-
-  #registro{
-    margin-left: 20%;
-  }
-
-  @media (max-width: 550px){
-    #registro{
-    margin-left: 2%;
-
-    }
-    }
-
-    @media (max-width: 900px){
-        #registro{
-        margin-left: 2%;
-    
-        }
-        }
-
-
-@media (max-width: 550px){
-          #ajolotito{
-          margin-top: 0.5%;
-          width: 20%;
-          height:auto;
-     
-          }
-          }
-    
