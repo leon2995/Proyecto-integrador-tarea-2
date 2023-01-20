@@ -18,73 +18,78 @@
     <title>Registro</title>
 
 </head>
-<body>
+<body class="d-flex flex-column">
   <section>
     <div id="menu"></div>  <!-- Esté es el menú de navegacion navBar -->
   </section>
-  <div class="container" id="container">
-  <!-- inicio alertas -->
-  
-  <div class="alert alert-success" role="alert" style="display: none" id="alert-success">
-    </div> <!-- alert-success -->
 
-    <div class="alert alert-danger" role="alert" id="alert-error"style="display: none">
-  </div> <!-- alert-error-->
-  
-  <!--fin alertas -->
-
-  <!-- encabezado -->
-
-  <h2 class="tituloRegistro">Registro de usuario</h2>
-  <br />
-
-  <!-- Inicio formulario -->
-
-    <form class="formCuenta"> <!--form-->
-
-      <div class="mb-3 row"><!--Nombre-->
-        <label for="nombre" class="col-sm-2 col-form-label"> 
-        <h6 class="subtitleForm">Nombre:</h6>
-      </label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" id="nombre" placeholder="Nombre completo"/>
-        </div> 
-      </div><!-- cierre Nombre-->
-
-      <div class="mb-3 row"><!--Numero-->
-        <label for="telefono" class="col-sm-2 col-form-label"><h6 class="subtitleForm">Número de teléfono:</h6>
-      </label>
-        <div class="col-sm-10">
-          <input type="number" class="form-control" id="telefono" placeholder="Teléfono"/>
-        </div>
-      </div><!--Cierre Numero-->
-
-      <div class="mb-3 row"><!--email-->
-        <label for="correo" class="col-sm-2 col-form-label"><h6 class="subtitleForm">Correo:</h6>
-          </label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="correo" placeholder="email@ejemplo.com"/>
-        </div>
-      </div><!--cierre email-->
-
-      <div class="mb-3 row"> <!--password--> 
-        <label for="password" class="col-sm-2 col-form-label">
-          <h6 class="subtitleForm">Contraseña:</h6>
-        </label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="password" placeholder="Contraseña"/>
-        </div>
-      </div><!--cierre password-->
-
-      <div class="btn-enviar"> <!--btn-enviar-->
-        <button type="submit" class="btn btn-new btn-lg btn-primary" id="btn-enviar">
-          Registrarme
-        </button> <!--boton-->
-      </div> <!--cierre btn-enviar-->
+  <div class="container flex-fill">
+    <!-- Contenido de la página -->
+    <div class="container" id="container">
+      <!-- inicio alertas -->
       
-    </form> <!--cierre form-->
-  </div> 
-
+      <div class="alert alert-success" role="alert" style="display: none" id="alert-success">
+        </div> <!-- alert-success -->
+    
+        <div class="alert alert-danger" role="alert" id="alert-error"style="display: none">
+      </div> <!-- alert-error-->
+      
+      <!--fin alertas -->
+    
+      <!-- encabezado -->
+    
+      <h2 class="tituloRegistro">Registro de usuario</h2>
+      <br />
+    
+      <!-- Inicio formulario -->
+    
+        <form class="formCuenta"> <!--form-->
+    
+          <div class="mb-3 row"><!--Nombre-->
+            <label for="nombre" class="col-sm-2 col-form-label"> 
+            <h6 class="subtitleForm">Nombre:</h6>
+          </label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre completo"/>
+            </div> 
+          </div><!-- cierre Nombre-->
+    
+          <div class="mb-3 row"><!--Numero-->
+            <label for="telefono" class="col-sm-2 col-form-label"><h6 class="subtitleForm">Número de teléfono:</h6>
+          </label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="telefono" placeholder="Teléfono"/>
+            </div>
+          </div><!--Cierre Numero-->
+    
+          <div class="mb-3 row"><!--email-->
+            <label for="correo" class="col-sm-2 col-form-label"><h6 class="subtitleForm">Correo:</h6>
+              </label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="correo" placeholder="email@ejemplo.com"/>
+            </div>
+          </div><!--cierre email-->
+    
+          <div class="mb-3 row"> <!--password--> 
+            <label for="password" class="col-sm-2 col-form-label">
+              <h6 class="subtitleForm">Contraseña:</h6>
+            </label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="password" placeholder="Contraseña"/>
+            </div>
+          </div><!--cierre password-->
+    
+          <div class="btn-enviar"> <!--btn-enviar-->
+            <button type="submit" class="btn btn-new btn-lg btn-primary" id="btn-enviar">
+              Registrarme
+            </button> <!--boton-->
+          </div> <!--cierre btn-enviar-->
+          
+        </form> <!--cierre form-->
+      </div> 
+    
+  </div>
+  
 
   <!--JavaScript Pie de página-->
   <div id="pieDePag"></div>

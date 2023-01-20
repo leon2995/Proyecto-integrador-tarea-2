@@ -1,6 +1,6 @@
 let pie = document.getElementById("pieDePag");
 function pieDePag() {
-  pie.innerHTML = `<footer class=" pieDePag d-flex flex-wrap justify-content-around align-items-center py-3 my-4">
+  pie.innerHTML = `<footer class=" pieDePag d-flex flex-wrap justify-content-around align-items-center py-3 my-4 align-self-end">
   <div class="col-md-4 d-flex align-items-center">
     <a href="/" class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1">
     </a>
