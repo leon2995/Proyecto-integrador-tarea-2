@@ -1,4 +1,3 @@
-
 .container{
     /*  position: absolute;  */
     display: block;
@@ -15,26 +14,24 @@
     margin-bottom: 50px;
  }
  
- .tituloContacto{
-     font-size: 40px;
-     margin-bottom:20px;
-     color: #e23d82;
-     }
-     
- 
- .btn{
-     background-color: #e23d82;
-     color: aliceblue;
-     margin-left: 40%;
- }
- 
- 
+.tituloContacto{
+    font-size: 40px;
+    margin-bottom:20px;
+    color: #e23d82;
+}
+
+.btn{
+    background-color: #e23d82;
+    color: aliceblue;
+    margin-left: 40%;
+}
  
  body{
      background: url("/fotos/Fondos/peakpx.jpg") ;
      background-repeat:no-repeat;
      background-size: cover;
  }
+ 
  input[type=number]::-webkit-inner-spin-button, 
  input[type=number]::-webkit-outer-spin-button { 
    -webkit-appearance: none; 
