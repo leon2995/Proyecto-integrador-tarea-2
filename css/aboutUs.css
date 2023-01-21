@@ -1,137 +1,167 @@
 /* inica GRID */
 /*cards */
-.container {  
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 30px;
-    height: 100%;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "d1 d2 d3 d4"
-      "d5 d6 d7 .."
-      
-  }
-  
-  .d1 { grid-area: d1; }
-  
-  .d2 { grid-area: d2; }
+.card {
+  border: 0;
+}
 
-  .d3 { grid-area: d3; }
-  
-  .d4 { grid-area: d4; }
-  
-  .d5 { grid-area: d5; }
-  
-  .d6 { grid-area: d6; }
-  
-  .d7 { grid-area: d7; }
+.container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+  height: 100%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "d1 d2 d3 d4"
+    "d5 d6 d7 .."
 
-  /* inicia FLEXBOX */
+}
+
+.d1 {
+  grid-area: d1;
+}
+
+.d2 {
+  grid-area: d2;
+}
+
+.d3 {
+  grid-area: d3;
+}
+
+.d4 {
+  grid-area: d4;
+}
+
+.d5 {
+  grid-area: d5;
+}
+
+.d6 {
+  grid-area: d6;
+}
+
+.d7 {
+  grid-area: d7;
+}
+
+/* inicia FLEXBOX */
 
 /* flex logo y texto */
 
-  .flexcontainer {
+.flexcontainer {
 
-    margin-top: 70px;
-    display: flex;
-    align-items: flex-start; 
-    flex-direction: row; 
-    flex-wrap: nowrap; 
-    align-content: flex-start;
+  margin-top: 70px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
 }
 
-  .flexcontainer > div >img{
-width: 450px;
-  }
+.flexcontainer>div>img {
+  width: 450px;
+}
 
-  .flexcontainer > div >{
-    text-align: center;
-          }
+.flexcontainer>div> {
+  text-align: center;
+}
 
-  .flexcontainer > div >h1{
-text-align: center;
-      }
+.flexcontainer>div>h1 {
+  text-align: center;
+}
 
-      .flexcontainer > div >p{
-        text-align: center;
-              }
+.flexcontainer>div>p {
+  text-align: center;
+}
 
 /* Arreglos generales */
 
 /* tamaño texto  "quienes somos" */
-.textoarea{
-    width: 60%;
-    padding-top: 120px;
+.textoarea {
+  width: 60%;
+  padding-top: 120px;
 }
+
 /* Texto cards */
-.card-text{
-text-align: justify;
+.card-text {
+  text-align: justify;
 }
 
 /* formato responsive */
 
 /* media querys GRID */
-              @media (max-width: 900px) {
-                .card-border-0{
-                min-height: 650px;
-                }
-                .container {
-                grid-template-rows: 1fr 1fr;
-                grid-template-columns: 1fr 1fr;
-                gap:5px;
-                grid-template-areas:
-                "d1 d2"
-                "d3 d4"
-                "d5 d6"
-                " d7 .."
-                }
-                }
-                
+@media (max-width: 900px) {
+  .card-border-0 {
+    min-height: 650px;
+  }
 
-                @media (max-width: 500px){
-                .card{
-                min-height: 550px;
-                }
-                .container {
-                    grid-template-rows: 1fr;
-                    grid-template-columns: 1fr;
-                    grid-template-areas:
-                    "d1"
-                    "d2"
-                    "d3"
-                    "d4"
-                    "d5" 
-                    "d6"
-                    "d7"
-                }
-            }
+  .container {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    grid-template-areas:
+      "d1 d2"
+      "d3 d4"
+      "d5 d6"
+      " d7 .."
+  }
+}
+
+
+@media (max-width: 500px) {
+  .card {
+    min-height: 550px;
+  }
+
+  .container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "d1"
+      "d2"
+      "d3"
+      "d4"
+      "d5"
+      "d6"
+      "d7"
+  }
+}
+
 /* media querys FLEXBOX */
-            @media (max-width: 800px) {
-                .flexcontainer {
-                  flex-direction: column;
-            align-items: center;
-                }
-              }
+@media (max-width: 800px) {
+  .flexcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
-            @media(max-width: 800px) 
-            { 
-                .flexcontainer > div >img {
-                width: 250px;
-                  }
-            }
+@media(max-width: 800px) {
+  .flexcontainer>div>img {
+    width: 250px;
+  }
+}
 
-            @media (max-width: 900px) {
-                .flexcontainer {
-                  flex-direction: column;
-            align-items: center; 
-        padding-bottom: 40px;
-        }
-              }
+@media (max-width: 900px) {
+  .flexcontainer {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+}
 
-              @media (max-width: 550px){
-                .registro{
-                    margin-right: 0%;
-                }
-              }
+@media (max-width: 550px) {
+  .registro {
+    margin-right: 0%;
+  }
+}
+
+.my-card {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.my-card:hover {
+  box-shadow: 0 0 10px rgba(235, 10, 223, 1.0);
+}
