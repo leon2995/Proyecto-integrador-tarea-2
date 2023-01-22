@@ -1,6 +1,19 @@
 let navBar = document.getElementById("menu");
+let NameUserLogeado = localStorage.getItem("NameUserLogeado");
 
+function IsLogU() {
+  if (NameUserLogeado!=null) {
+    console.log(NameUserLogeado);
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+console.log(IsLogU());
 function menu() {
+  
+  
   navBar.innerHTML = `<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a  href="/index.html">
@@ -28,7 +41,7 @@ function menu() {
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item dropdown">
         <a class="nave-menudo-link navegador-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          LOGEATE
+          ${ IsLogU() ? NameUserLogeado: "LOGEATE"}
         </a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="../html/login.html">Iniciar Sesión</a></li>

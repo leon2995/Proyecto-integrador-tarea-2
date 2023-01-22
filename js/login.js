@@ -1,11 +1,12 @@
 let btnIniciar = document.getElementById("btn-iniciar");
 let dataUser = localStorage.getItem("dataUser");
-
 let inputEmail = document.getElementById("correo");
 let inputPassword = document.getElementById("password");
 let alertError = document.getElementById("alert-error");
 let alertSuccess = document.getElementById("alert-success");
 let usuarioEncontrado = false;
+
+let UsuarioLogeado="";
 if (dataUser) {
   dataUser = JSON.parse(dataUser);
 } else {
@@ -26,6 +27,10 @@ btnIniciar.addEventListener("click", function (event) {
       dataUser[i].correo === inputEmail.value &&
       dataUser[i].password === inputPassword.value
     ) {
+      UsuarioLogeado=dataUser[i].nombre;
+       // Almacenar el objeto en el LocalStorage
+      localStorage.setItem("NameUserLogeado", UsuarioLogeado);
+      console.log(UsuarioLogeado);
       usuarioEncontrado = true;
       break;
     }
