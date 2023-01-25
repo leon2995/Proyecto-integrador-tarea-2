@@ -1,9 +1,9 @@
 .container-sm{
     /*  position: absolute;  */
      width: 622px;
-     height: 439px; 
+     height: auto; 
      left: 690px;
-     top: 248px; 
+     top: auto; 
      justify-content: center;
      background: rgba(255, 255, 255, 0.8);
      border: 1px solid rgba(0, 0, 0, 0.5);
@@ -17,9 +17,6 @@
     margin-bottom:auto;
  }
 }
-
-
-
  @media (max-width: 1024px){
     body {
         background-image:  url("/fotos/Fondos/peakpx.jpg") ;

@@ -1,10 +1,12 @@
 let pie = document.getElementById("pieDePag");
+var today = new Date();
+var year = today.getFullYear();
 function pieDePag() {
   pie.innerHTML = `<footer class=" pieDePag d-flex flex-wrap justify-content-around align-items-center py-3 my-4">
   <div class="col-md-4 d-flex align-items-center">
     <a href="/" class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1">
     </a>
-    <span class="mb-3 mb-md-0 text-white"class="text-white">&copy; 2023 Ajolote Adventure, Inc</span>
+    <span class="mb-3 mb-md-0 text-white"class="text-white">&copy; ${year} Ajolote Adventure, Inc</span>
   </div>
 
   <ul class="nav col-md-6 justify-content-center list-unstyled d-flex">

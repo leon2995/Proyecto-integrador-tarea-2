@@ -1,5 +1,16 @@
 let navBar = document.getElementById("menu");
+let NameUserLogeado = localStorage.getItem("NameUserLogeado");
 
+function IsLogU() {
+  if (NameUserLogeado!=null) {
+    console.log(NameUserLogeado);
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+console.log(IsLogU());
 function menu() {
   navBar.innerHTML = ` <section>
   <!-- Esté es el menú de navegacion navBar -->
@@ -28,7 +39,7 @@ function menu() {
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Mi Usuario
+          ${ IsLogU() ? NameUserLogeado: "Mi Usuario"}
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/html/login.html">Iniciar Sesión</a></li>
