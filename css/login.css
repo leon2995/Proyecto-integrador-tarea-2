@@ -1,5 +1,5 @@
-#container{
-    display: grid;
+.container{
+   
     width:500px;
     height: 500px; 
     left: 330px;
@@ -8,13 +8,19 @@
     background-attachment: unset;
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.5);
-    padding: 30px
+    padding: 30px;
+    margin-top: 70px;
+    
       
 }
-.container{
-    margin-top: 50px;
-   
-}
+@media (max-width: 1024px) {
+    .container {
+    width:  100%;
+    height: 100%;
+    margin-bottom: auto;
+    }
+    }
+
  
  .Titulo {
      font-size: 10000px;
@@ -41,3 +47,10 @@
      margin-bottom:20px;
      color: #e23d82;
  }
+ 
+ @media  (max-width: 1024px){
+    body {
+        background-image:  url("/fotos/Fondos/peakpx.jpg") ;
+        
+    }
+}

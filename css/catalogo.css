@@ -5,6 +5,15 @@
     border:0px;
     
     }/*boton de ver más color violeta*/
+
+    @media (max-width: 1024px) {
+      .position-absolute {
+      width:  30%;
+      height: 1%;
+     
+      }
+      }
+
     .card-text {
         text-align:justify;
     }/*Alineacion del texto de las cards de productos*/
