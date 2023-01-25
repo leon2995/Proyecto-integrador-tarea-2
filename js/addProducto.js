@@ -199,8 +199,9 @@ form.addEventListener("submit", (e) => {
   } else {
     input.classList.remove("is-invalid");
   }
-
+  
   setTimeout(() => {
+    errors = [];
     nombreInput.classList.remove("is-invalid");
     precioInput.classList.remove("is-invalid");
     comentarioInput.classList.remove("is-invalid");
