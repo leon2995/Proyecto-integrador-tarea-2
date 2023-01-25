@@ -1,0 +1,148 @@
+.slideCar {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: none;
+}
+
+.slideCar ul {
+  padding: 0;
+  display: flex;
+  width: 600%;
+
+  animation: cambio 20s infinite alternate;
+  animation-timing-function: linear;
+}
+
+.slideCar li {
+  width: 100%;
+  list-style: none;
+}
+
+.slideCar li img {
+  width: 100%;
+  height: 100%;
+}
+
+@supports (object-fit: cover) {
+  .slideCar img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.titulo{
+    margin-top:8%;
+    color: #FF6F61;
+    text-align: center;
+    }
+    /*.card{
+      display: inline-block;
+        margin-left: 1%;
+        margin-top: 2%;
+      width: auto;
+      height: auto;
+      background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+        } */
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+.card-group {
+  
+  grid-gap: 50px;
+}
+
+/* Actuaclizacion Boton */
+.card-title{
+text-align: center;
+margin-bottom: 1.5em;
+}
+
+/* Cambiar el ajuste card */
+.card{
+
+border: 0;
+}
+
+/* Actualizacion carruzel */
+/* Contenedor cards */
+.container{
+margin-top: 3em;
+margin-bottom: 2em;
+}
+
+/* Estilos carrusel */
+.carousel-item {
+height: 25em;
+
+}
+@media (max-width: 720px) {
+.carousel-item {
+    height: 13rem;
+  }
+}
+@media (max-width: 420px) {
+.carousel-item {
+    height: 10rem;
+  }
+}
+.carruselIndex{
+/* padding-top: 1em ;
+padding-bottom: 1em; */
+margin-top: 2em;
+margin-bottom: 2em;
+
+}
+/* Estilos boton */
+.btn {
+background:#e23d82;
+color:white;
+border:0px;
+
+}/*boton de ver más color violeta*/
+
+a{
+  color:white;
+  text-decoration: none;
+}
+.cartelad{
+  position: center;
+}
+@media (max-width: 1024px) {
+  .cartelad {
+  width:  100%;
+  height: 100%;
+ 
+  }
+  }
