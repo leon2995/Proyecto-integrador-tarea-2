@@ -1,16 +1,19 @@
 
 .container{
     /*  position: absolute;  */
+   
      width: 600px;
-     height: auto; 
+     height: 550px; 
      left: 690px;
-     top: auto; 
+     top: 248px; 
      background: rgba(255, 255, 255, 0.8);
      border: 1px solid rgba(0, 0, 0, 0.5);
      padding: 30px;
      margin-top: 100px;
      justify-content: center;
     background-attachment: unset;
+   
+
  }
 
  @media (max-width: 1024px){
