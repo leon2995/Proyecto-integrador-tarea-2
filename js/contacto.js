@@ -8,60 +8,72 @@ let InputComentario = document.getElementById("InputComentario");
 let alertSuccess = document.getElementById('alert-success');
 let idTimeout;
 let validos = 0;
-
+let validacion= false;
 
 btnEnviar.addEventListener("click", function(event){
     event.preventDefault();
     AlertEscritura.style.display="none";
-    if(InputTelefono.value.length < 10 ){
-        AlertEscritura.style.display = "block";
-        AlertEscritura.innerHTML += "<br/>Debes ingresar un numero válido.";
-        InputTelefono.style.border = "solid red 1px"; 
-    }  else{
-        InputTelefono.style.border = "solid green 1px";
-        validos++;
-    }// else
-    
-
-    if (InputCorreo.value.match(emailRegex) == null) {
-        AlertEscritura.style.display = "block";
-        AlertEscritura.innerHTML += "<br/>El correo electrónico no es válido.";
-        InputCorreo.style.border = "solid red 1px"; 
-    }// if
-    else{
-        InputCorreo.style.border = "solid green 1px";
-        validos++;
-    }// else
-
-    InputNombre.innerHTML="";
     if (InputNombre.value.length < 3) {
-        AlertEscritura.innerHTML = "El mensaje debe contener 3 caracteres o más.";
+        AlertEscritura.innerHTML = "Tu nombre no es válido.";
         AlertEscritura.style.display="block";
          InputNombre.focus();
          InputNombre.select();
-         InputNombre.style.border = "solid red 1px";   
+         InputNombre.style.border = "solid red 2px";   
+         validacion= false;
     }
     else{
-        InputNombre.style.border = "solid green 1px";
+        InputNombre.style.border = "solid green 2px";
+        validacion= true;
         validos++;
     }// else
 
+    if (InputCorreo.value.match(emailRegex) == null) {
+        AlertEscritura.style.display = "block";
+        AlertEscritura.innerHTML += "<br/>Tu correo electrónico no es válido.";
+        InputCorreo.style.border = "solid red 2px"; 
+        validacion= false;
+    }// if
+    else{
+        InputCorreo.style.border = "solid green 2px";
+        validos++;
+        validacion= true;
+    }// else
+
+    if(InputTelefono.value.length < 10 ){
+        AlertEscritura.style.display = "block";
+        AlertEscritura.innerHTML += "<br/>Tu número no es válido. Debes ingresar un número válido.";
+        InputTelefono.style.border = "solid red 2px"; 
+        validacion= false;
+    }  else{
+        InputTelefono.style.border = "solid green 2px";
+        validos++;
+        validacion= true;
+    }// else
+
     if (InputComentario.value.trim().length < 5){
-        AlertEscritura.innerHTML = "El comentario debe de contener 5 caracteres o más";
+        AlertEscritura.innerHTML += "<br/>Tu mensaje debe de contener 5 caracteres o más";
         AlertEscritura.style.display= "block";
         InputComentario.focus(); 
         InputComentario.select();
-        InputComentario.style.border = "solid red 1px";
+        InputComentario.style.border = "solid red 2px";
+        validacion= false;
         
     }//if
     else{
-        InputComentario.style.border = "solid green 1px";
+        InputComentario.style.border = "solid green 2px";
         validos++;
+        validacion= true;
     }//else
+    setTimeout(function () {
+        InputCorreo.style.border ="";
+        InputNombre.style.border ="";
+        InputTelefono.style.border ="";
+        InputComentario.style.border =""; 
+        AlertEscritura.style.display= "none";
+                     }, 1000);
    
   
-    if(validos == 4){    
-   
+    if(validacion){    
     console.log(InputCorreo.value);
     Email.send({
     Host : "smtp.elasticemail.com",
@@ -74,14 +86,23 @@ btnEnviar.addEventListener("click", function(event){
             Su correo es: ${InputCorreo.value}.
             Su telefono es: ${InputTelefono.value}.
             Su comentario:  ${InputComentario.value} `
-        }).then((message) => alert(message));//then 
+        }).then((message) => /* alert(message) */
+        Swal.fire(
+            '¡Tus datos han sido recibidos, pronto nos pondremos en contacto!',
+            '',
+            'success'
+          ));//then 
         setTimeout(function () {
             InputCorreo.style.border ="";
             InputNombre.style.border ="";
             InputTelefono.style.border ="";
             InputComentario.style.border =""; 
-            alertSuccess.innerHTML = "Su mensaje fue enviado con éxito ";
-            alertSuccess.style.display = 'block';
+            InputCorreo.value ="";
+            InputNombre.value ="";
+            InputTelefono.value ="";
+            InputComentario.value =""; 
+           /*  alertSuccess.innerHTML = "Su mensaje fue enviado con éxito ";
+            alertSuccess.style.display = 'block'; */
                          }, 2000);
         
           
