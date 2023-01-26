@@ -2,7 +2,7 @@
     /*  position: absolute;  */
 
     width: 600px;
-    height: 550px;
+    height: auto;
     left: 690px;
     top: 248px;
     background: rgba(255, 255, 255, 0.8);
@@ -11,8 +11,12 @@
     margin-top: 100px;
     justify-content: center;
     background-attachment: unset;
+}
 
-
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 
 @media (max-width: 1024px) {
