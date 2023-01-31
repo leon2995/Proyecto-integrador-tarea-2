@@ -7,3 +7,20 @@ img{
    margin: 20px;
    padding: 20px;
 }
+#btnClear{
+    background-color: #e23d82;
+     color: aliceblue;
+     border-style: none;
+    }
+    #btnComprar{
+     background-color: #e23d82;
+    color: aliceblue;
+    border-style: none;
+    
+    }
+    #btnRegresar{
+        background-color: #e23d82;
+       color: aliceblue;
+       border-style: none;
+       
+       }

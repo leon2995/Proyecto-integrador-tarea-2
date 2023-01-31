@@ -25,7 +25,7 @@ window.addEventListener("load", function(event){
      }//if
      else{
           Swal.fire({
-               title: '<strong>Tu carrito aun esta vacío</strong>',
+               title: '<strong>Tu carrito aún esta vacío</strong>',
                icon: 'info',
                html:
                  'Selecciona el destino a donde desees viajar con Axolotl Adventures.',

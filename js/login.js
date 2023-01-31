@@ -37,7 +37,7 @@ btnIniciar.addEventListener("click", function (event) {
     }
   }
   if (usuarioEncontrado) {
-    Swal.fire("Bienvenidxs!", "", "success");
+    Swal.fire("¡Bienvenidxs!", "", "success");
     // Redireccion en caso exitoso
     setTimeout(() => {
       window.location.href = "/index.html";

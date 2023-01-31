@@ -29,7 +29,7 @@ let data = [
   },
   {
     id: 2,
-    title: "Mazatlan",
+    title: "Mazatlán",
     resume:
       "Las extensas y hermosas playas de Mazatlán, ubicado en el estado de Sinaloa, lo convierten en el destino playero más famoso del noroeste de México.",
     images: [
@@ -120,7 +120,7 @@ let data = [
   },
   {
     id: 9,
-    title: "Michoacan",
+    title: "Michoacán",
     resume:
       "Cada año, millones de lepidópteros anaranjados recorren más de 8,000 kilómetros (desde el sur de Canadá y norte de Estados Unidos) para cubrir los árboles de oyamel, pino y cedro de la entidad michoacana con el objetivo de hibernar. Este magnífico fenómeno ocurre en la Reserva de la Biosfera de la Mariposa Monarca, considerada Patrimonio de la Humanidad por la UNESCO.",
     images: [
@@ -218,7 +218,7 @@ form.addEventListener("submit", (e) => {
         { img: imagen },
         { img: imagen /* imagesArray[2] */ },
       ],
-      price: "$" + precio,
+      price: precio,
       text: DescripcionActividad,
     };
     data.push(producto);
@@ -233,8 +233,8 @@ form.addEventListener("submit", (e) => {
     // Ocultar la alerta después de 2 segundos
     setTimeout(function () {
       //document.getElementById("alert-success").style.display = "none";
-      Swal.fire("Registrado exitosamente!", "", "success");
-    }, 2000);
+      Swal.fire("¡Registrado exitosamente!", "", "success");
+    }, 1000);
   } else {
     // Mostrar las alerts de error
     for (let i = 0; i < errors.length; i++) {

@@ -300,3 +300,6 @@ border:0px;
       }
     }
   
+.card-text {
+  text-align: justify;
+}
