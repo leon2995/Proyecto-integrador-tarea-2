@@ -2,3 +2,8 @@ img{
     width: auto ; 
     height: auto;
 }
+
+.cont{
+   margin: 20px;
+   padding: 20px;
+}

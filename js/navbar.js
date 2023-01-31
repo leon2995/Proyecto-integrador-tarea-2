@@ -1,12 +1,12 @@
 let navBar = document.getElementById("menu");
 let NameUserLogeado = localStorage.getItem("NameUserLogeado");
+let cont = 0;
 
 function IsLogU() {
-  if (NameUserLogeado!=null) {
+  if (NameUserLogeado != null) {
     console.log(NameUserLogeado);
     return true;
-  }
-  else{
+  } else {
     return false;
   }
 }
@@ -43,7 +43,7 @@ function menu() {
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item dropdown">
         <a class="nave-menudo-link navegador-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          ${ IsLogU() ? NameUserLogeado: "Mi Usuario"}
+          ${IsLogU() ? NameUserLogeado : "Mi Usuario"}
         </a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="../html/login.html">Iniciar Sesión</a></li>
@@ -58,6 +58,8 @@ function menu() {
           <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
         </svg>
       </a>
+      <span class="badge rounded-pill text-bg-danger" 
+                            id="contadorProductosCar" style="display:none;">0</span>
     </div>
   </div>
 </nav>
@@ -65,3 +67,12 @@ function menu() {
 }
 
 menu();
+
+window.addEventListener("load", function (event) {
+  let tmp = localStorage.getItem("contadorProductos");
+  if (tmp != null) {
+    cont = parseInt(tmp);
+    contadorProductosCar.innerHTML = cont;
+    contadorProductosCar.style = "display:block;";
+  }
+});
