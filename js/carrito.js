@@ -28,7 +28,7 @@ window.addEventListener("load", function(event){
                title: '<strong>Tu carrito aun esta vacío</strong>',
                icon: 'info',
                html:
-                 'Selecciona el destino a donde desees viajar con Axolotl Adventures',
+                 'Selecciona el destino a donde desees viajar con Axolotl Adventures.',
                showCloseButton: true,
               
                focusConfirm: false,

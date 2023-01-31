@@ -18,7 +18,7 @@ let data = [
     id: 1,
     title: "Bernal",
     resume:
-      "Este pueblo de interesantes construcciones virreinales está asentado a los pies de uno de los peñones más llamativos del continente americano, con vasta vegetación entre las rocas. Todo está ligado a interesantes leyendas e historias que la gente cuenta, en un ambiente provinciano ideal para el descanso",
+      "Este pueblo de interesantes construcciones virreinales está asentado a los pies de uno de los peñones más llamativos del continente americano, con vasta vegetación entre las rocas. Todo está ligado a interesantes leyendas e historias que la gente cuenta, en un ambiente provinciano ideal para el descanso.",
     images: [
       { img: "/fotos/FotosActividades/Bernal1.jpg" },
       { img: "/fotos/FotosActividades/Bernal2.jpg" },
@@ -38,7 +38,7 @@ let data = [
       { img: "/fotos/FotosActividades/Mazatlan3.jpg" },
     ],
     price:  3479,
-    text: "Olvídate del recorrido a pie: deslízate sin esfuerzo por Mazatlán y recorre dos siglos de su historia a bordo de un Segway. Durante esta visita guiada por el casco antiguo y el paseo marítimo, recorra lugares emblemáticos como la Plazuela Machado, la hermosa Catedral, Olas Altas y el Clavadista. Descubrirá más con menos esfuerzo y tiempo con un Segway. Este tour para grupos pequeños está limitado a seis personas, lo que garantiza una atención personalizada. Tour guiado en Segway por Mazatlán Navega por el casco antiguo y el paseo marítimo Admira la arquitectura de la ciudad y observa a los temerarios buceadores saltar desde un acantilado Aprende sobre los orígenes y la evolución de la ciudad. Elige entre varios horarios de salida El tour en grupos pequeños está limitado a seis personas",
+    text: "Olvídate del recorrido a pie: deslízate sin esfuerzo por Mazatlán y recorre dos siglos de su historia a bordo de un Segway. Durante esta visita guiada por el casco antiguo y el paseo marítimo, recorra lugares emblemáticos como la Plazuela Machado, la hermosa Catedral, Olas Altas y el Clavadista. Descubrirá más con menos esfuerzo y tiempo con un Segway. Este tour para grupos pequeños está limitado a seis personas, lo que garantiza una atención personalizada. Tour guiado en Segway por Mazatlán Navega por el casco antiguo y el paseo marítimo Admira la arquitectura de la ciudad y observa a los temerarios buceadores saltar desde un acantilado Aprende sobre los orígenes y la evolución de la ciudad. Elige entre varios horarios de salida El tour en grupos pequeños está limitado a seis personas.",
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ let data = [
       { img: "/fotos/FotosActividades/Oxaca4.jpg" },
     ],
     price:  2987,
-    text: "Tour por la Ciudad de Oaxaca es un tour que te permitirá conocer el centro de Oaxaca a pie, acompañado en todo momento de un guía. Comienza tu recorrido visitando el Templo de Santo Domingo, una muestra del barroco mexicano, construida por la orden dominica. Continúa tu camino sobre el andador turístico donde podrás ver varias tiendas, restaurantes, museos y galerías, hasta llegar al centro de la ciudad. En este sitio disfrutarás de la música de banda y marimba, además conocerás los portales ubicados en el Jardín de la Constitución. Durante este recorrido podrás disfrutar de una deliciosa nieve oaxaqueña o un Tejate bebida prehispánica refrescante. Para finalizar visitarás los dos mercados más famosos, 20 de Noviembre y Benito Juárez, dentro de ellos encontrarás una gran variedad de comida típica y productos de la región que seguramente no te resistirás a probarlos",
+    text: "Tour por la Ciudad de Oaxaca es un tour que te permitirá conocer el centro de Oaxaca a pie, acompañado en todo momento de un guía. Comienza tu recorrido visitando el Templo de Santo Domingo, una muestra del barroco mexicano, construida por la orden dominica. Continúa tu camino sobre el andador turístico donde podrás ver varias tiendas, restaurantes, museos y galerías, hasta llegar al centro de la ciudad. En este sitio disfrutarás de la música de banda y marimba, además conocerás los portales ubicados en el Jardín de la Constitución. Durante este recorrido podrás disfrutar de una deliciosa nieve oaxaqueña o un Tejate bebida prehispánica refrescante. Para finalizar visitarás los dos mercados más famosos, 20 de Noviembre y Benito Juárez, dentro de ellos encontrarás una gran variedad de comida típica y productos de la región que seguramente no te resistirás a probarlos.",
   },
   {
     id: 4,
@@ -64,7 +64,7 @@ let data = [
       { img: "/fotos/FotosActividades/Rivera1.jpg" },
     ],
     price:  5700,
-    text: "Tour por la Ciudad de Oaxaca es un tour que te permitirá conocer el centro de Oaxaca a pie, acompañado en todo momento de un guía. Comienza tu recorrido visitando el Templo de Santo Domingo, una muestra del barroco mexicano, construida por la orden dominica. Continúa tu camino sobre el andador turístico donde podrás ver varias tiendas, restaurantes, museos y galerías, hasta llegar al centro de la ciudad. En este sitio disfrutarás de la música de banda y marimba, además conocerás los portales ubicados en el Jardín de la Constitución. Durante este recorrido podrás disfrutar de una deliciosa nieve oaxaqueña o un Tejate bebida prehispánica refrescante. Para finalizar visitarás los dos mercados más famosos, 20 de Noviembre y Benito Juárez, dentro de ellos encontrarás una gran variedad de comida típica y productos de la región que seguramente no te resistirás a probarlos",
+    text: "Tour por la Ciudad de Oaxaca es un tour que te permitirá conocer el centro de Oaxaca a pie, acompañado en todo momento de un guía. Comienza tu recorrido visitando el Templo de Santo Domingo, una muestra del barroco mexicano, construida por la orden dominica. Continúa tu camino sobre el andador turístico donde podrás ver varias tiendas, restaurantes, museos y galerías, hasta llegar al centro de la ciudad. En este sitio disfrutarás de la música de banda y marimba, además conocerás los portales ubicados en el Jardín de la Constitución. Durante este recorrido podrás disfrutar de una deliciosa nieve oaxaqueña o un Tejate bebida prehispánica refrescante. Para finalizar visitarás los dos mercados más famosos, 20 de Noviembre y Benito Juárez, dentro de ellos encontrarás una gran variedad de comida típica y productos de la región que seguramente no te resistirás a probarlos.",
   },
   {
     id: 5,
@@ -96,7 +96,7 @@ let data = [
     id: 7,
     title: "Puerto Vallarta",
     resume:
-      "Puerto Vallarta es un destino internacionalmente reconocido por sus playas bañadas por el Pacífico, belleza natural e instalaciones de primer nivel que se mezclan con una cálida hospitalidad. Existe una infinidad de lugares por descubrir y elegir tu favorita; tarea nada fácil, pues cada una de las playas de Puerto Vallarta cuenta con un encanto particular",
+      "Puerto Vallarta es un destino internacionalmente reconocido por sus playas bañadas por el Pacífico, belleza natural e instalaciones de primer nivel que se mezclan con una cálida hospitalidad. Existe una infinidad de lugares por descubrir y elegir tu favorita; tarea nada fácil, pues cada una de las playas de Puerto Vallarta cuenta con un encanto particular.",
     images: [
       { img: "/fotos/FotosActividades/Puerto1.jpg" },
       { img: "/fotos/FotosActividades/Puerto3.jpg" },
@@ -109,7 +109,7 @@ let data = [
     id: 8,
     title: "Los Cabos",
     resume:
-      "Reconocido por su belleza natural, Los Cabos es un destino de clase mundial compuesto de hermosos paisajes desérticos y tropicales. Ofrece hoteles de lujo, playas galardonadas, buen clima durante todo el año y cocina de renombre a nivel internacional con chefs poseedores de estrellas Michelin. Hogar del icónico Arco, donde se encuentran el Mar de Cortés y el Océano Pacífico",
+      "Reconocido por su belleza natural, Los Cabos es un destino de clase mundial compuesto de hermosos paisajes desérticos y tropicales. Ofrece hoteles de lujo, playas galardonadas, buen clima durante todo el año y cocina de renombre a nivel internacional con chefs poseedores de estrellas Michelin. Hogar del icónico Arco, donde se encuentran el Mar de Cortés y el Océano Pacífico.",
     images: [
       { img: "/fotos/FotosActividades/Cabo4.jpg" },
       { img: "/fotos/FotosActividades/Cabos1.jpg" },
@@ -122,7 +122,7 @@ let data = [
     id: 9,
     title: "Michoacan",
     resume:
-      "Cada año, millones de lepidópteros anaranjados recorren más de 8,000 kilómetros (desde el sur de Canadá y norte de Estados Unidos) para cubrir los árboles de oyamel, pino y cedro de la entidad michoacana con el objetivo de hibernar. Este magnífico fenómeno ocurre en la Reserva de la Biosfera de la Mariposa Monarca, considerada Patrimonio de la Humanidad por la UNESCO",
+      "Cada año, millones de lepidópteros anaranjados recorren más de 8,000 kilómetros (desde el sur de Canadá y norte de Estados Unidos) para cubrir los árboles de oyamel, pino y cedro de la entidad michoacana con el objetivo de hibernar. Este magnífico fenómeno ocurre en la Reserva de la Biosfera de la Mariposa Monarca, considerada Patrimonio de la Humanidad por la UNESCO.",
     images: [
       { img: "/fotos/FotosActividades/Mich1.jpg" },
       { img: "/fotos/FotosActividades/Mich2.jpg" },
@@ -143,7 +143,7 @@ let data = [
       { img: "/fotos/FotosActividades/Guada3.jpg" },
     ],
     price:  3200,
-    text: "Recorrido turístico en Guadalajara para conocer la ciudad. Se inicia conociendo la zona de La Minerva, Los Arcos de Guadalajara, el impresionante puente atirantado “Puente Matute Remus, para luego circular por la zona más exclusiva de Guadalajara en el siglo XVIII. Paramos en una de las iglesias más bellas de la Perla Tapatía: El Expiatorio, donde después de una reseña de la historia conoceremos su interior. Diviértete en el parían del nuevo Pueblo Mágico de Tlaquepaque, lugar de bellas artesanías, galerías y restaurantes, compra souvenirs tradicionales de la región",
+    text: "Recorrido turístico en Guadalajara para conocer la ciudad. Se inicia conociendo la zona de La Minerva, Los Arcos de Guadalajara, el impresionante puente atirantado “Puente Matute Remus, para luego circular por la zona más exclusiva de Guadalajara en el siglo XVIII. Paramos en una de las iglesias más bellas de la Perla Tapatía: El Expiatorio, donde después de una reseña de la historia conoceremos su interior. Diviértete en el parían del nuevo Pueblo Mágico de Tlaquepaque, lugar de bellas artesanías, galerías y restaurantes, compra souvenirs tradicionales de la región.",
   },
 ];
 localStorage.setItem("producto", JSON.stringify(data));
