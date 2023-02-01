@@ -143,7 +143,7 @@ border:0px;
   .about {
       text-align: center;
   }
-  .titulo{
+  .titulo {
     text-align: center;
    
   }
@@ -311,3 +311,11 @@ border:0px;
 .card-text {
   text-align: justify;
 }
+
+@media (max-width: 370px) and (min-width:200px) {
+  .background__title {
+      
+        height: 80%;
+        width: 80%;
+    }
+  }
