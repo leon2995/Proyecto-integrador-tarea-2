@@ -1,3 +1,11 @@
+#uno{
+  font-weight: bold;
+  text-shadow:10px;
+}
+#dos{
+  font-weight: bold;
+  text-shadow: 10px;
+}
 /* IMAGEN DE GUADALAJARA */
 body{
   font-family: 'Roboto', sans-serif;
